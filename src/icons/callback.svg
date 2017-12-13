@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>callback</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="///-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1440+/-TopMenu-Slider-/-index" transform="translate(-1180.000000, -36.000000)" fill="#FF2934">
+            <g id="Group-2" transform="translate(1093.000000, 32.000000)">
+                <path d="M94.7777778,9 L97,6.5 L94.7777778,4 L94.7777778,5.5 L93,5.5 L93,7.5 L94.7777778,7.5 L94.7777778,9 L94.7777778,9 Z M95.5,11.25 C94.9,11.25 94.3,11.15 93.7,10.95 C93.55,10.9 93.35,10.95 93.2,11.05 L92.1,12.15 C90.7,11.45 89.55,10.25 88.8,8.85 L89.9,7.75 C90.05,7.6 90.1,7.4 90,7.25 C89.85,6.7 89.75,6.1 89.75,5.5 C89.75,5.2 89.55,5 89.25,5 L87.5,5 C87.2,5 87,5.2 87,5.5 C87,10.2 90.8,14 95.5,14 C95.8,14 96,13.8 96,13.5 L96,11.75 C96,11.45 95.8,11.25 95.5,11.25 L95.5,11.25 Z" id="callback"></path>
+            </g>
+        </g>
+    </g>
+</svg>

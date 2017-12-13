@@ -1,4 +1,141 @@
 // HEADER
 .header
+  position: absolute
+  left: 0
+  right: 0
+  z-index: 10
+
   &__wrapper
-    
+    display: flex
+    align-items: center
+    padding: 30px 0
+    +history
+
+  &__logo
+    display: inline-block
+    flex: 0 0 240px
+    background: #D8D8D8
+    height: 50px
+
+  &__menu
+    flex: 1 1 auto
+    list-style: none
+    padding: 0
+    margin: 0 30px 0 50px
+    display: flex
+    align-items: center
+    +tr
+    opacity: 0
+    transform: translate3d(0,-10px,0)
+    pointer-events: none
+    &.is-active
+      pointer-events: all
+      opacity: 1
+      transform: translate3d(0,0,0)
+
+    > li
+      position: relative
+      flex: 1 1 auto
+      display: inline-block
+      font-size: 14px
+      > a
+        position: relative
+        display: inline-block
+        padding: 5px
+        +tr
+        &::after
+          display: inline-block
+          content: ' '
+          position: absolute
+          bottom: -10px
+          left: 0
+          right: 0
+          height: 4px
+          background: $colorRed
+          opacity: 0
+          pointer-events: none
+          transform: translate(0,5px)
+          +tr
+
+      &.is-active, &:hover
+        > a
+          color: $colorRed
+          &::after
+            opacity: 1
+            transform: translate(0,0)
+        .header__menu-sub
+          opacity: 1
+          transform: translate3d(0,0,0)
+          pointer-events: all
+
+    &-sub
+      list-style: none
+      margin: 0
+      padding: 15px 25px
+      position: absolute
+      left: 0
+      top: 48px
+      z-index: 5
+      background: #FFFFFF
+      border: 1px solid #000000
+      opacity: 0
+      transform: translate3d(0,20px,0)
+      pointer-events: none
+      +tr
+      li
+        font-size: 13px
+        a
+          display: inline-block
+          white-space: nowrap
+          padding: 12px 0
+          color: $colorGray
+      &:hover
+        opacity: 1
+        transform: translate3d(0,0,0)
+        pointer-events: all
+
+
+  &__cta
+    flex: 0 0 auto
+    margin-left: auto
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &__callback
+    display: inline-block
+    margin-bottom: 5px
+    +tr
+    .ico
+      font-size: 10px
+      color: $colorRed
+      +tr
+    span
+      display: inline-block
+      margin-left: 6px
+      font-size: 12px
+    &:hover
+      color: $colorRed
+
+  &__phone
+    display: inline-block
+    font-size: 28px
+    +tr
+    span
+      &:first-child
+        display: inline-block
+        font-size: 10px
+        color: $colorRed
+        margin-right: 10px
+    &:hover
+      color: $colorRed
+
+  &__hamburger
+    margin-left: 30px
+    flex: 0 0 auto
+
+
++r($hd)
+  .header
+    &__menu
+      display: none

@@ -3,6 +3,7 @@ button
   -webkit-apperance: none
   border: 0
   box-shadow: none
+  cursor: pointer
   &:focus
     outline: none
 
@@ -16,3 +17,32 @@ button
   &--block
     display: block
     width: 100%
+
+  &-primary
+    color: white
+    border: 1px solid white
+    font-size: 18px
+    padding: 12px 20px
+    background: transparent
+    box-shadow: 0px 0px 0px white
+    span
+      position: relative
+      z-index: 2
+    &:hover
+      border-color: $colorRed
+      box-shadow: 3px 2px 0px $colorRed
+
+  &-red
+    color: $colorRed
+    border: 1px solid $colorRed
+    font-size: 18px
+    padding: 12px 20px
+    background: transparent
+    // box-shadow: 0px 0px 0px white
+    span
+      position: relative
+      z-index: 2
+    &:hover
+      border-color: $colorRed
+      background-color: $colorRed
+      color: white

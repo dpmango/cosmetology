@@ -1,0 +1,88 @@
+/* Socials
+.socials
+  &__wrapper
+
+    display: flex
+
+  &__col
+    flex: 0 1 33.3%
+    width: 33.3%
+    padding: 0 12px
+    display: flex
+    flex-direction: column
+    min-width: 0
+    min-height: 1px
+
+  &__head
+    text-align: center
+    .social
+      margin-left: auto
+      margin-right: auto
+
+  &__link
+    display: inline-block
+    margin-top: 18px
+    font-size: 16px
+    color: $colorGray
+    +tr
+    &:hover
+      color: $colorRed
+
+  &__grid
+    display: inline-block
+    margin-top: 30px
+    +tr
+    img
+      max-width: 100%
+
+    &:hover
+      opacity: .7
+
+.social
+  display: flex
+  align-items: center
+  justify-content: center
+  size: 62px
+  border-radius: 50%
+  color: white
+  font-size: 0
+  +tr
+  .ico
+
+  &--facebook
+    background-color: $facebook
+    .ico
+      font-size: 35px
+    &:hover
+      background-color: $grayBg
+      color: $facebook
+
+
+  &--youtube
+    background-color: $youtube
+    .ico
+      font-size: 25px
+    &:hover
+      background-color: $grayBg
+      color: $youtube
+
+  &--instagram
+    background-color: $instagram
+    .ico
+      font-size: 35px
+    &:hover
+      background-color: $grayBg
+      color: $instagram
+
+  &--vk
+    background-color: $vk
+    .ico
+      font-size: 20px
+    &:hover
+      background-color: $grayBg
+      color: $vk
+
+  &--small
+    size: 36px
+    .ico
+      transform: scale(.6)

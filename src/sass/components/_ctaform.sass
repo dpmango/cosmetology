@@ -1,0 +1,42 @@
+/* CTA FORM
+.cta-form
+  margin-top: -20px
+  margin-bottom: 50px
+  &__options
+    display: flex
+    align-items: center
+    justify-content: center
+    .ui-checkbox
+      margin: 10px 2%
+
+  &__inputs
+    display: flex
+    height: 80px
+    margin-top: 40px
+
+    input
+      flex: 0 1 ((8/12) * 100%)
+      -webkit-apeerance: none
+      width: 100%
+      padding: 25px 5%
+      border: 1px solid $colorRed
+      +history
+      font-size: 18px
+      +tr
+      // line-height: 80px
+      &:focus
+        box-shadow: 3px 2px 0px $colorRed
+
+    button
+      flex: 0 1 ((4/12) * 100%)
+      margin-left: 30px
+      -webkit-apeerance: none
+      border: 1px solid $colorRed
+      background: transparent
+      color: $colorRed
+      font-size: 18px
+      text-align: center
+      +tr
+      &:hover
+        background: $colorRed
+        color: white

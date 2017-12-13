@@ -48,25 +48,41 @@ $(document).ready(function(){
 
   // Viewport units buggyfill
   window.viewportUnitsBuggyfill.init({
-    force: true,
-    hacks: window.viewportUnitsBuggyfillHacks,
+    force: false,
     refreshDebounceWait: 250,
     appendToBody: true
   });
 
+  ////////////
+  // READY - triggered when PJAX DONE
+  ////////////
+
+  function pageReady(){
+    initSliders();
+    initFitText();
+
+    revealFooter();
+    _window.resized(100, revealFooter);
+
+  }
+
+  pageReady();
 
  	// Prevent # behavior
-	$('[href="#"]').click(function(e) {
-		e.preventDefault();
-	});
-
-	// Smoth scroll
-	$('a[href^="#section"]').click( function() {
-        var el = $(this).attr('href');
-        $('body, html').animate({
-            scrollTop: $(el).offset().top}, 1000);
-        return false;
-	});
+	_document
+    .on('click', '[href="#"]', function(e) {
+  		e.preventDefault();
+  	})
+  	.on( 'click', 'a[href^="#section"]', function() {
+          var el = $(this).attr('href');
+          $('body, html').animate({
+              scrollTop: $(el).offset().top}, 1000);
+          return false;
+  	})
+    .on('click', 'js-scrolldown', function(){
+      // $('body, html').animate({
+      //     scrollTop: $(el).offset().top}, 1000);
+    })
 
   // FOOTER REVEAL
   function revealFooter() {
@@ -93,8 +109,6 @@ $(document).ready(function(){
       }
     }
   }
-  revealFooter();
-  _window.resized(100, revealFooter);
 
   // HEADER SCROLL
   // add .header-static for .page or body
@@ -121,9 +135,10 @@ $(document).ready(function(){
   }
 
   // HAMBURGER TOGGLER
-  $('.hamburger').on('click', function(){
-    $('.hamburger').toggleClass('active');
-    $('.mobile-navi').toggleClass('active');
+  _document.on('click', '[js-hamburger]', function(){
+    $(this).toggleClass('is-active');
+    $('[js-header-menu]').toggleClass('is-active');
+    $('.mobile-navi').toggleClass('is-active');
   });
 
   // SET ACTIVE CLASS IN HEADER
@@ -131,34 +146,73 @@ $(document).ready(function(){
   // user .active for li instead
   $('.header__menu li').each(function(i,val){
     if ( $(val).find('a').attr('href') == window.location.pathname.split('/').pop() ){
-      $(val).addClass('active');
+      $(val).addClass('is-active');
     } else {
-      $(val).removeClass('active')
+      $(val).removeClass('is-active')
     }
   });
 
+  // FIT TEXT
+  function initFitText(){
+    $('[js-fittext]').each(function(i, text){
+      var _this = $(text);
 
-  // VIDEO PLAY
-  $('.promo-video .icon').on('click', function(){
-    $(this).closest('.promo-video').toggleClass('playing');
-    $(this).closest('.promo-video').find('iframe').attr("src", $("iframe").attr("src").replace("autoplay=0", "autoplay=1"));
-  });
+      var min = $(this).data('min') || "20px";
+      var max = $(this).data('max') || "70px";
 
+      _this.fitText(0.8, {minFontSize: min, maxFontSize: max})
+    })
+
+    .fitText(0.8, {minFontSize: '20px'})
+  }
 
   //////////
   // SLIDERS
   //////////
 
-  $('.trending__wrapper').slick({
-    autoplay: true,
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true
-  });
+  function initSliders(){
+    var slickNextArrow = '<div class="slick-prev"><svg class="ico ico-back-arrow"><use xlink:href="img/sprite.svg#ico-back-arrow"></use></svg></div>';
+    var slickPrevArrow = '<div class="slick-next"><svg class="ico ico-next-arrow"><use xlink:href="img/sprite.svg#ico-next-arrow"></use></svg></div>'
+
+    $('[js-slider]').each(function(i, slider){
+      var self = $(slider);
+
+      if (self && self !== undefined) {
+        self.slick({
+          autoplay: self.data('slick-autoplay') !== undefined ? true : false,
+          dots: self.data('slick-dots') !== undefined ? true : false,
+          arrows: self.data('slick-arrows') !== undefined ? true : false,
+          prevArrow: slickNextArrow,
+          nextArrow: slickPrevArrow,
+          infinite: self.data('slick-infinite') !== undefined ? true : true,
+          speed: 300,
+          slidesToShow: 1,
+          accessibility: false,
+          adaptiveHeight: false,
+          draggable: self.data('slick-no-controls') !== undefined ? false : true,
+          swipe: self.data('slick-no-controls') !== undefined ? false : true,
+          swipeToSlide: self.data('slick-no-controls') !== undefined ? false : true,
+          touchMove: self.data('slick-no-controls') !== undefined ? false : true
+        });
+      }
+
+    })
+
+    $('[js-slider-col-3]').slick({
+      autoplay: false,
+      dots: true,
+      arrows: true,
+      prevArrow: slickNextArrow,
+      nextArrow: slickPrevArrow,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      accessibility: false,
+      adaptiveHeight: false
+    })
+
+  }
+
 
   //////////
   // MODALS

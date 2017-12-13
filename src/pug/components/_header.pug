@@ -1,17 +1,47 @@
 // HEADER :: START
 header.header
-  .container
+  .container.container--wide
     .header__wrapper
-      .header__logo
-        a.logo(href="/homepage.pug")
-          +icon('icon-viber')
-      .header__menu
-        ul.header__menu__list
-          - var list = ["Point 1", "Point 2", "Point 3"]
-            each item in list
-              li
-                a.header__menu__link(href="#")=item
-      
+      a(href="#").header__logo
+        // logo
+          
+      ul.header__menu(js-header-menu)
+        li
+          a(href="#") о нас
+          ul.header__menu-sub
+            li
+              a(href="#") Косметология
+            li
+              a(href="#") Эстетическая гинекология
+            li
+              a(href="#") Пластическая хирургия
+            li
+              a(href="#") Реабилитация            
+        li
+          a(href="#") услуги
+        li
+          a(href="#") цены
+        li
+          a(href="#") видео
+        li
+          a(href="#") результаты лечения
+        li
+          a(href="#") я хочу!
+        li
+          a(href="#") контакты
+
       .header__cta
+        a(href="#").header__callback
+          +icon('ico-callback')
+          span заказать  звонок
+        
+        a(href="tel:88005551232323").header__phone
+          span 8 (800)
+          span 555–123–2323
+      
+      .header__hamburger
+        .hamburger.hamburger--spin(js-hamburger)
+          .hamburger-box
+            .hamburger-inner
         
 // HEADER :: END

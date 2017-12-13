@@ -4,11 +4,384 @@ bodyClass: homepage
 ---
 extends shared/_layout
 block content
-  i.icon.icon-logo
+
+  // HERO SLIDER :: START
+  .hero
+    .container
+      .scrolldown(js-scrolldown)
+        include ../icons/scrollDown.svg
+      
+    .hero-slider(js-slider data-slick-dots).m-slick-dots
+      //slide
+      .hero-slide
+        .container
+          .hero-slide__wrapper
+            .hero-slide__left
+              img.hero-slide-bg(src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              .hero-slide__content
+                .hero-slide__title(js-fittext data-max="70px" data-min="20px") Косметология
+                .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
+                .hero-slide__cta
+                  a(href="#").btn.btn-primary
+                    span Подробнее
+            .hero-slide__right
+              img(src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
+      //slide
+      .hero-slide
+        .container
+          .hero-slide__wrapper
+            .hero-slide__left
+              img.hero-slide-bg(src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              .hero-slide__content
+                .hero-slide__title(js-fittext) Косметология
+                .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
+                .hero-slide__cta
+                  a(href="#").btn.btn-primary
+                    span Подробнее
+            .hero-slide__right
+              img(src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
+      //slide
+      .hero-slide
+        .container
+          .hero-slide__wrapper
+            .hero-slide__left
+              img.hero-slide-bg(src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              .hero-slide__content
+                .hero-slide__title(js-fittext) Косметология
+                .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
+                .hero-slide__cta
+                  a(href="#").btn.btn-primary
+                    span Подробнее
+            .hero-slide__right
+              img(src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
+  
+  
+  // ABOUT :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name о нас
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // slider
+      .equal-slider.m-slick-arrows(js-slider data-slick-arrows)
+        //slide
+        .equal-slide
+          .equal-slide__wrapper
+            .equal-slide__left
+              .equal-slide__title 5 причин <br> выбрать нас
+              .equal-slide__text 
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+                p It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.
+              a(href="#").more-link
+                span Подробнее
+            .equal-slide__right
+              .shadow-image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+      
+        //slide
+        .equal-slide
+          .equal-slide__wrapper
+            .equal-slide__left
+              .equal-slide__title 5 причин <br> выбрать нас
+              .equal-slide__text 
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+                p It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.
+              a(href="#").more-link
+                span Подробнее
+            .equal-slide__right
+              .shadow-image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+        
+        //slide
+        .equal-slide
+          .equal-slide__wrapper
+            .equal-slide__left
+              .equal-slide__title 5 причин <br> выбрать нас
+              .equal-slide__text 
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+                p It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.
+              a(href="#").more-link
+                span Подробнее
+            .equal-slide__right
+              .shadow-image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+
+
+  // SERVICES :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name услуги
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // service
+      .service
+        .service__col
+          .service__title 
+            .service__title-num 01
+            .service__title-name косметология
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link
+              span Подробнее
+              
+        .service__col
+          .shadow-image.shadow-image--left
+            img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
     
-  // iteration example
-  .socials
-    - var socials = ['email']
-      each social in socials
-        a(class="social-share" href="#" role="button")
-          +icon('ico-'+social)
+    .container.container--wide
+      // service
+      .service.service--reverse
+        .service__col
+          .service__title 
+            .service__title-num 02
+            .service__title-name эстетическая гинекология
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link.more-link--left
+              span Подробнее
+              
+        .service__col
+          .shadow-image
+            img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+    
+    .container
+      // service
+      .service
+        .service__col
+          .service__title 
+            .service__title-num 03
+            .service__title-name пластическая хирургия
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link
+              span Подробнее
+              
+        .service__col
+          .shadow-image.shadow-image--left
+            img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+    
+      // service
+      .service.service--reverse
+        .service__col
+          .service__title 
+            .service__title-num 04
+            .service__title-name Реабилитация
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link.more-link--left
+              span Подробнее
+              
+        .service__col
+          .shadow-image
+            img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+
+
+
+  // SECTION
+  .section
+    .container
+      // title block
+      .title
+        .title__name я хочу
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // CTA FORM
+      form(action="#").cta-form
+        .cta-form__options
+          .ui-checkbox
+            input(type="checkbox" id="cta_opt1" name="cta_opt")
+            label(for="cta_opt1")
+              span Косметология
+          .ui-checkbox
+            input(type="checkbox" id="cta_opt2" name="cta_opt")
+            label(for="cta_opt2")
+              span Пластическая хирургия
+          .ui-checkbox
+            input(type="checkbox" id="cta_opt3" name="cta_opt")
+            label(for="cta_opt3")
+              span Эстетическая хирургия
+        .cta-form__inputs
+          input(name="description" value="Убрать морщины")
+          button(type="submit")
+            span Узнать 
+          
+                  
+  // EXPERTS :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name специалисты
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      .experts-slider(js-slider-col-3).m-slick-arrows.m-slick-dots
+        // expert
+        .expert-slide
+          .expert-slide__image
+            img(src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
+          .expert-slide__name иванова наталья
+          .expert-slide__position врач-косметолог
+          .expert-slide__cta
+            a(href="#").btn.btn-red.btn--block
+              span Записаться
+        // expert
+        .expert-slide
+          .expert-slide__image
+            img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+          .expert-slide__name иванова наталья
+          .expert-slide__position врач-косметолог
+          .expert-slide__cta
+            a(href="#").btn.btn-red.btn--block
+              span Записаться
+        // expert
+        .expert-slide
+          .expert-slide__image
+            img(src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
+          .expert-slide__name иванова наталья
+          .expert-slide__position врач-косметолог
+          .expert-slide__cta
+            a(href="#").btn.btn-red.btn--block
+              span Записаться
+        // expert
+        .expert-slide
+          .expert-slide__image
+            img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+          .expert-slide__name иванова наталья
+          .expert-slide__position врач-косметолог
+          .expert-slide__cta
+            a(href="#").btn.btn-red.btn--block
+              span Записаться
+
+  // SOCIALS :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name мы в соцсетях
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      
+      // socials
+      .socials
+        .socials__wrapper
+          // col
+          .socials__col
+            .socials__head
+              a(href="#").social.social--facebook
+                +icon('ico-social-facebook')
+              a(href="#").socials__link /name
+              
+            a(href="#").socials__grid
+              img(src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
+          
+          // col  
+          .socials__col
+            .socials__head
+              a(href="#").social.social--vk
+                +icon('ico-social-vk')
+              a(href="#").socials__link /name
+            a(href="#").socials__grid
+              img(src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
+
+          // col
+          .socials__col
+            .socials__head
+              a(href="#").social.social--instagram
+                +icon('ico-social-instagram')
+              a(href="#").socials__link /name
+            a(href="#").socials__grid
+              img(src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
+          
+          
+                
+  // PHOTO :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name Фото
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+
+  // CONTACT :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name как нас найти
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+
+      // contact
+      .contact
+        .contact__wrapper
+          .contact__col
+            .contact__head Адрес
+            .contact__content
+              span г. Москва, 
+              span ул. Новый Арбат 36/9, корпус 2
+          // col
+          .contact__col
+            .contact__head Телефон
+            .contact__content
+              span 
+                a(href="tel:88005009834") 8(800)500-98-34
+              span
+                a(href="tel:84956465664") +7(495)645-56-64
+          // col
+          .contact__col
+            .contact__head e-mail
+            .contact__content
+              span 
+                a(href="mailto:info@svs-cosmetology.ru") info@svs-cosmetology.ru
+          // col
+          .contact__col
+            .contact__head соц.сети
+            .contact__content
+              .footer__socials
+                a(href="#").social.social--small.social--facebook
+                  +icon('ico-social-facebook')
+                a(href="#").social.social--small.social--youtube
+                  +icon('ico-social-youtube')
+                a(href="#").social.social--small.social--instagram
+                  +icon('ico-social-instagram')
+                a(href="#").social.social--small.social--vk
+                  +icon('ico-social-vk')
+        
+    // map
+    .contact-map
+      #contact-map  
+
+
+  // HOW TO GET :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name как нас найти
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // hot to get
+      .directions
+        .directions__col
+          .directions__head м. Краснопресненская
+          .directions__distance
+            +icon('ico-direction') 
+            span 850 м.
+          .directions__text Выход из метро один. Направо до Конюшковской улицы. Повернуть направо и по Конюшковской улице (улица с уклоном вниз), идём по левой стороне улицы вдоль стены Американского посольства до конца забора. Повернуть налево, через 100 метров направо. Ориентир — церковь. Напротив церкви клиника пластической хирургии «МедЛаз» (двухэтажное здание серого цвета).
+        .directions__col
+          .directions__head м. Смоленская
+          .directions__distance
+            +icon('ico-direction') 
+            span 850 м.
+          .directions__text Выход в город. Налево по Новинскому бульвару до пересечения с Новым Арбатом и по подземному переходу налево на Новый Арбат (в сторону Кутузовского проспекта). Идти до Девятинского переулка. Повернуть направо на Девятинский переулок (вверх до церкви). Напротив церкви клиника пластической хирургии «Медлаз» (двухэтажное здание серого цвета).
+        .directions__col
+          .directions__head м. Арбатская
+          .directions__distance
+            +icon('ico-direction') 
+            span 850 м.
+          .directions__text Выход в город. По Новому Арбату в сторону Кутузовского проспекта до Девятинского переулка. Повернуть направо на Девятинский переулок (вверх до церкви). Напротив церкви клиника пластической хирургии «Медлаз» (двухэтажное здание серого цвета).

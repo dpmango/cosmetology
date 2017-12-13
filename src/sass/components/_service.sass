@@ -1,0 +1,65 @@
+
+/* Services
+.service
+  display: flex
+  margin-bottom: 45px
+  &--reverse
+    flex-direction: row-reverse
+    text-align: right
+    .service
+      &__col
+        &:first-child
+          padding-right: 0%
+          padding-left: 5%
+
+      &__title
+        &::before
+          left: auto
+          right: 0
+
+      &__text
+        padding-left: 0
+        padding-right: 30%
+
+  &__col
+    flex: 0 1 50%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &:first-child
+      padding-right: 5%
+
+  &__title
+    position: relative
+    padding-top: 80px
+    +history
+    &::before
+      display: inline-block
+      content: ' '
+      position: absolute
+      top: 0
+      left: 0
+      width: 2px
+      height: 60px
+      background: $fontColor
+    &-num
+      font-size: 24px
+      letter-spacing: 1px
+      color: $colorGray
+    &-name
+      font-size: 46px
+
+  &__text
+    font-size: 16px
+    color: $colorGray
+    line-height: 1.5
+    margin-top: 30px
+    padding-left: 30%
+
+
+
+
++r($wide)
+  .service
+    &__text
+      // padding-left: 10%

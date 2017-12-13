@@ -1,0 +1,29 @@
+/* Directions
+.directions
+  display: flex
+  &__col
+    flex: 0 1 33.3%
+    min-width: 0
+    min-height: 1px
+    width: 33.3%
+    padding: 15px
+
+  &__head
+    +history
+    font-size: 18px
+    text-align: center
+  &__distance
+    position: relative
+    margin-top: 20px
+    display: flex
+    align-items: center
+    .ico
+      color: $colorRed
+    span
+      display: inline-block
+      margin-left: 5px
+    &::after
+
+  &__text
+    color: $colorGray
+    line-height: 1.5

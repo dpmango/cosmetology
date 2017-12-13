@@ -1,4 +1,158 @@
 // INDEX
 
-.hello
-  display: none
+
+/* slick dots
+.m-slick-dots
+  .slick-dots
+    list-style: none
+    margin: 0
+    padding: 4vh 0
+    position: relative
+    z-index: 5
+    display: flex
+    justify-content: center
+    li
+      margin-right: 8px
+      cursor: pointer
+      &:last-child
+        margin-right: 0
+      &::before
+        display: inline-block
+        content: ' '
+        size: 8px
+        border-radius: 50%
+        background: #EDEBEB
+        border: 1px solid $borderColor
+        +tr
+      button
+        display: none
+        font-size: 0
+        background: transparent
+        -webkit-apperance: none
+
+      &:hover
+        &::before
+          background: rgba($colorRed, .5)
+      &.slick-active
+        &::before
+          background: $colorRed
+          border-color: $colorRed
+
+/* slick arrows
+.m-slick-arrows
+  .slick-next, .slick-prev
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 5
+    font-size: 30px
+    cursor: pointer
+    +tr
+    &:hover
+      color: $colorRed
+
+  .slick-next
+    right: -45px
+
+  .slick-prev
+    left: -45px
+
++r($wide)
+  .m-slick-arrows
+    .slick-next
+      right: -35px
+
+    .slick-prev
+      left: -35px
+
+
+
+/* title
+.title
+  padding: 100px 0 60px 0
+  text-align: center
+  &__name
+    position: relative
+    font-size: 100px
+    line-height: 1
+    letter-spacing: 2px
+    +history
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute
+      bottom: 100px
+      left: 50%
+      transform: translateX(-50%)
+      height: 60px
+      width: 2px
+      background: currentColor
+
+  &__description
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 30px
+    font-size: 16px
+    line-height: 1.375
+    text-align: center
+
+
+
+/* Shadow image
+.shadow-image
+  flex: 1 1 auto
+  display: flex
+  flex-direction: column
+  padding-right: 24px
+  padding-bottom: 24px
+  img
+    flex: 1 1 auto
+    object-fit: cover
+    max-width: 100%
+    box-shadow: 24px 24px 0 #F7F7F7
+
+  &--left
+    padding-right: 0
+    padding-left: 24px
+    img
+      box-shadow: -24px 24px 0 #F7F7F7
+
+
+
+/* more link
+.more-link
+  position: relative
+  font-size: 18px
+  color: $fontColor
+  span
+    display: inline-block
+    padding-right: 80px
+    +tr
+    &::after
+      position: absolute
+      top: 50%
+      right: 0
+      display: inline-block
+      content: ' '
+      background: $fontColor
+      margin-left: 18px
+      width: 60px
+      height: 1px
+      transform: translateY(-50%)
+      +tr
+  &--left
+    span
+      padding-right: 0
+      padding-left: 80px
+      &::after
+        right: auto
+        left: 0
+        margin-left: 0
+        margin-right: 18px
+  &:hover
+    span
+      color: $colorRed
+      text-decoration: underline
+      &::after
+        background: $colorRed
