@@ -1,6 +1,5 @@
 .hamburger
   padding: 10px 10px
-  margin-right: -20px
   display: inline-block
   cursor: pointer
   transition-property: opacity, filter
@@ -12,6 +11,7 @@
   background-color: transparent
   border: 0
   margin: 0
+  margin-right: -20px
   overflow: visible
   &:hover
     .hamburger-inner
@@ -19,6 +19,10 @@
       &::before, &::after
         background-color: $colorRed
 
++r($desktop)
+  .hamburger
+    margin-right: -10px
+    
 .hamburger-box
   width: 29px
   height: 24px
