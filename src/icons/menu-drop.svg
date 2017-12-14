@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>menu-drop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="///-Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-1024/-TopMenu-open" transform="translate(-630.000000, -230.000000)" fill="#212526">
+            <polygon id="menu-drop" points="644.133333 230 638 236.133333 631.866667 230 630 231.866667 638 239.866667 646 231.866667"></polygon>
+        </g>
+    </g>
+</svg>

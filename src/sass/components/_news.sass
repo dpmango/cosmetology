@@ -8,8 +8,12 @@
   background: $grayBg
   margin: 0 10px
   &__image
+    display: block
+    +tr
     img
       max-width: 100%
+    &:hover
+      opacity: .7
 
   &__content
     padding: 0 7%
@@ -19,10 +23,14 @@
     color: $colorGray
 
   &__name
+    display: inline-block
     margin-top: 15px
     +history
     font-size: 18px
     letter-spacing: 0.75px
+    text-decoration: underline
+    &:hover
+      text-decoration: none
 
   &__text
     margin-top: 30px

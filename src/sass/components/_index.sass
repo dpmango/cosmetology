@@ -116,6 +116,7 @@
     object-fit: cover
     max-width: 100%
     box-shadow: 24px 24px 0 #F7F7F7
+    +tr
 
   &--left
     padding-right: 0
@@ -123,6 +124,14 @@
     img
       box-shadow: -24px 24px 0 #F7F7F7
 
+  &:hover
+    img
+      opacity: .85
+      box-shadow: 12px 12px 0 #F7F7F7
+
+    &.shadow-image--left
+      img
+        box-shadow: -12px 12px 0 #F7F7F7
 
 
 /* more link
@@ -183,51 +192,3 @@
     text-align: center
     +history
     font-size: 46px
-
-
-
-/* photo slide
-.photo-slider
-    .slick-track
-      // padding-top: 24px
-      margin: 0 -15px
-
-.photo-slide
-  position: relative
-  padding: 0 15px 40px 15px
-  width: 100%
-  &::after
-    display: inline-block
-    content: ' '
-    position: absolute
-    top: 24px
-    left: calc(24px + 15px)
-    right: 0
-    bottom: 0
-    background: $grayBg
-    z-index: 1
-  &__content
-    position: relative
-    z-index: 2
-
-  &__image
-    img
-      max-width: 100%
-
-  &--left
-    .photo-slide__name
-      padding-left: 35px
-
-  &--right
-    &::after
-      left: 0
-      right: calc(24px + 15px)
-    .photo-slide__name
-      padding-right: 35px
-
-
-  &__name
-    margin-top: 35px
-    text-align: center
-    +history
-    font-size: 18px

@@ -5,6 +5,10 @@
   right: 0
   z-index: 10
 
+  &.is-menu-opened
+    background: white
+    position: fixed
+
   &__wrapper
     display: flex
     align-items: center
@@ -135,7 +139,106 @@
     flex: 0 0 auto
 
 
-+r($hd)
++r(1300)
   .header
     &__menu
       display: none
+
+/* mobile-navi
+.mobile-navi
+  display: none
+  flex-direction: column
+  overflow-y: auto
+  position: fixed
+  top: 115px
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 9
+  background: white
+  border-top: 1px solid $borderColor
+  opacity: 0
+  pointer-events: none
+  transform: translate3d(0,100%,0)
+  &.is-active
+    opacity: 1
+    transform: translate3d(0,0,0)
+    pointer-events: all
+  &__menu
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    list-style: none
+    padding: 50px 20px
+    margin: 0 auto
+    width: 100%
+    max-width: 300px
+    > li
+      position: relative
+      flex: 1 0 auto
+      display: block
+      width: 100%
+      +history
+      font-size: 18px
+      padding-right: 30px
+      cursor: pointer
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        top: 25px
+        // transform: translateY(-50%)
+        right: 0
+        background: svg-load('../icons/menu-drop.svg') no-repeat center
+        size: 16px 10px
+        +tr
+      > a
+        display: inline-block
+        padding: 20px 0
+
+      > ul
+        display: none
+        position: relative
+        list-style: none
+        padding: 5px 0 5px 15px
+        &::before
+          display: inline-block
+          content: ' '
+          position: absolute
+          top: 15px
+          left: 0px
+          bottom: 15px
+          background: $fontColor
+          width: 1px
+        li
+          display: block
+          +history
+          font-size: 13px
+          a
+            display: inline-block
+            padding: 10px 0
+            color: $colorGray
+            +tr
+            &:hover
+              color: $colorRed
+
+      &:hover
+        &::after
+          background-image: svg-load('../icons/menu-drop-red.svg')
+
+      &.is-opened
+        &::after
+          background-image: svg-load('../icons/menu-drop-red.svg')
+          transform: rotate(180deg)
+
+
+
+
++rmin(1300)
+  .mobile-navi
+    display: none !important
+
++r(1300)
+  .mobile-navi
+    display: flex

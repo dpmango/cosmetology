@@ -137,9 +137,26 @@ $(document).ready(function(){
   // HAMBURGER TOGGLER
   _document.on('click', '[js-hamburger]', function(){
     $(this).toggleClass('is-active');
+    $('.header').toggleClass('is-menu-opened')
     $('[js-header-menu]').toggleClass('is-active');
     $('.mobile-navi').toggleClass('is-active');
   });
+
+  // MOBILE NAVI
+  _document
+    .on('click', '[js-mobile-nav] > li', function(){
+      var hasUl = $(this).has('ul').length > 0
+
+      if ( hasUl ){
+        $(this).toggleClass('is-opened');
+        $(this).find('ul').slideToggle()
+
+      }
+    })
+    .on('click', '[js-mobile-nav] > li > ul', function(e){
+      e.stopPropagation();
+
+    })
 
   // SET ACTIVE CLASS IN HEADER
   // * could be removed in production and server side rendering

@@ -1,0 +1,54 @@
+
+/* photo slide
+.photo-slider
+    .slick-track
+      // padding-top: 24px
+      margin: 0 -15px
+
+.photo-slide
+  position: relative
+  padding: 0 15px 40px 15px
+  width: 100%
+  &::after
+    display: inline-block
+    content: ' '
+    position: absolute
+    top: 24px
+    left: calc(24px + 15px)
+    right: 0
+    bottom: 0
+    background: $grayBg
+    z-index: 1
+  &__content
+    position: relative
+    z-index: 2
+
+  &__image
+    display: block
+    +tr
+    img
+      max-width: 100%
+    &:hover
+      opacity: .7
+
+  &--left
+    .photo-slide__name
+      padding-left: 35px
+
+  &--right
+    &::after
+      left: 0
+      right: calc(24px + 15px)
+    .photo-slide__name
+      padding-right: 35px
+
+
+  &__name
+    display: inline-block
+    margin-top: 35px
+    text-align: center
+    +history
+    font-size: 18px
+    text-decoration: underline
+    &:hover
+      text-decoration: none
