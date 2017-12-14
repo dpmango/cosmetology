@@ -211,7 +211,34 @@ $(document).ready(function(){
       adaptiveHeight: false
     })
 
+    $('[js-slider-col-2]').slick({
+      autoplay: false,
+      dots: true,
+      arrows: true,
+      prevArrow: slickNextArrow,
+      nextArrow: slickPrevArrow,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      accessibility: false,
+      adaptiveHeight: false
+    })
+
   }
+
+  //////////
+  // TABS
+  //////////
+  _document.on('change', '[js-checkbox-tabs] [data-tab-for]', function(e){
+
+    var choosenTab = $(this).data('tab-for');
+    var tabTarget = $('[data-tab="'+choosenTab+'"]');
+
+    tabTarget.addClass('is-active').siblings().removeClass('is-active')
+    //
+    // e.preventDefault();
+  })
 
 
   //////////

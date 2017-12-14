@@ -156,3 +156,73 @@
       text-decoration: underline
       &::after
         background: $colorRed
+
+
+/* slide tabs
+.slide-tabs
+  display: flex
+  align-items: center
+  justify-content: center
+  .ui-checkbox
+    margin: 10px 2%
+
+
+/* slide tab
+.slide-tab
+  padding-top: 30px
+  display: none
+  &.is-active
+    display: block
+  &__heading
+    margin-bottom: 40px
+    text-align: center
+    +history
+    font-size: 46px
+
+
+
+/* photo slide
+.photo-slider
+    .slick-track
+      // padding-top: 24px
+      margin: 0 -15px
+
+.photo-slide
+  position: relative
+  padding: 0 15px 40px 15px
+  width: 100%
+  &::after
+    display: inline-block
+    content: ' '
+    position: absolute
+    top: 24px
+    left: calc(24px + 15px)
+    right: 0
+    bottom: 0
+    background: $grayBg
+    z-index: 1
+  &__content
+    position: relative
+    z-index: 2
+
+  &__image
+    img
+      max-width: 100%
+
+  &--left
+    .photo-slide__name
+      padding-left: 35px
+
+  &--right
+    &::after
+      left: 0
+      right: calc(24px + 15px)
+    .photo-slide__name
+      padding-right: 35px
+
+
+  &__name
+    margin-top: 35px
+    text-align: center
+    +history
+    font-size: 18px

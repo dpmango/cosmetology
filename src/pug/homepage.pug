@@ -306,6 +306,121 @@ block content
         .title__name Фото
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
+      .slide-tabs(js-checkbox-tabs)
+        .ui-checkbox
+          input(type="checkbox" id="photo_opt1" name="photo_opt" data-tab-for="photo-1" checked)
+          label(for="photo_opt1")
+            span Косметология
+        .ui-checkbox
+          input(type="checkbox" id="photo_opt2" name="photo_opt" data-tab-for="photo-2")
+          label(for="photo_opt2")
+            span Пластическая хирургия
+        .ui-checkbox
+          input(type="checkbox" id="photo_opt3" name="photo_opt" data-tab-for="photo-3")
+          label(for="photo_opt3")
+            span Эстетическая хирургия
+      
+      //slide tab
+      .slide-tab(data-tab="photo-1").is-active
+        .slide-tab__heading косметология
+      
+        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+    
+      //slide tab
+      .slide-tab(data-tab="photo-2")
+        .slide-tab__heading Пластическая хирургия
+      
+        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+
+      //slide tab
+      .slide-tab(data-tab="photo-3")
+        .slide-tab__heading Эстетическая хирургия
+      
+        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+      
+              
+            
   // VIDEO :: START
   .section
     .container
@@ -313,7 +428,123 @@ block content
       .title
         .title__name ВИДЕО
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      //slide tabs
+      .slide-tabs(js-checkbox-tabs)
+        .ui-checkbox
+          input(type="checkbox" id="video_opt1" name="video_opt" data-tab-for="video-1")
+          label(for="video_opt1")
+            span Косметология
+        .ui-checkbox
+          input(type="checkbox" id="video_opt2" name="video_opt" data-tab-for="video-2" checked)
+          label(for="video_opt2")
+            span Пластическая хирургия
+        .ui-checkbox
+          input(type="checkbox" id="video_opt3" name="video_opt" data-tab-for="video-3")
+          label(for="video_opt3")
+            span Эстетическая хирургия
+      
+      //slide tab
+      .slide-tab(data-tab="video-1")
+        .slide-tab__heading косметология
+      
+        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
             
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+    
+      //slide tab
+      .slide-tab(data-tab="video-2").is-active
+        .slide-tab__heading Пластическая хирургия
+      
+        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+
+      //slide tab
+      .slide-tab(data-tab="video-3")
+        .slide-tab__heading Эстетическая хирургия
+      
+        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          //slide 
+          .photo-slide.photo-slide--left
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+          // slide
+          .photo-slide.photo-slide--right
+            .photo-slide__content
+              .photo-slide__image
+                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+              .photo-slide__name формирование кубиков на животе. создание атлетического тела
+      
+              
+                    
   // NEWS :: START
   .section
     .container
