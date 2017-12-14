@@ -416,4 +416,35 @@ $(document).ready(function(){
 
   runScrollMonitor();
 
+  ////////////
+  // YANDEX MAPS
+  ////////////
+
+  ymaps.ready(init);
+  var myMap,
+      myPlacemark;
+
+  function init(){
+    myMap = new ymaps.Map("contact-map", {
+      center: [55.754152, 37.578496],
+      zoom: 15
+    });
+
+    // myMap.controls.remove('zoomControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('fullscreenControl');
+    myMap.controls.remove('rulerControl');
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('routeEditor');
+
+    myMap.behaviors.disable('scrollZoom');
+
+    myPlacemark = new ymaps.Placemark([55.754152, 37.578496], {
+      hintContent: 'г. Москва, ул. Новый Арбат 36/9, корпус 2!',
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
+
 });
