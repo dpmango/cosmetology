@@ -66,6 +66,7 @@
   .hero-slider
     top: 80px
 
+
 /* hero slide
 .hero-slide
   width: 100%
@@ -157,6 +158,11 @@
       min-height: 670px
       height: calc(100vh + 8vh + 20px)
       max-height: auto
+    &--inner
+      > .container
+        min-height: 670px
+        height: calc(100vh + 8vh + 20px)
+        max-height: auto
 
   .hero-slide
     &__left
@@ -214,6 +220,10 @@
   right: 0
   z-index: 2
 
++r(600)
+  .slider
+    top: 80px
+    
 .slider-slide
   position: relative
   min-height: 500px
@@ -266,6 +276,19 @@
       height: 1px
       background: white
 
++r($desktop)
+  .slider-slide
+    min-height: 670px
+    height: 100vh
+    max-height: auto
+    &__title
+      font-size: 53px
+
+
++r($mobile)
+  .slider-slide
+    &__title
+      font-size: 32px
 
 .breadcrumbs
   a

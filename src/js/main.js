@@ -319,9 +319,9 @@ $(document).ready(function(){
   })
 
 
-  // JOBS TOGGLER
+  // TABS TOGGLER
   _document
-    .on('click', '.jobs__item-name', function(){
+    .on('click', '.tabs__item-name', function(){
 
       $(this).toggleClass('is-opened');
       $(this).next().slideToggle()
@@ -331,10 +331,22 @@ $(document).ready(function(){
     //   e.stopPropagation();
     // })
 
-  _document.on('click', '.sidebar__category-top', function(){
-    $(this).toggleClass('is-opened');
-    $(this).parent().find('.sidebar__category-drop').slideToggle();
-  })
+  // CATEGORY TOGGLER
+  _document
+    .on('click', '.sidebar__category-top', function(){
+      $(this).toggleClass('is-opened');
+      $(this).parent().find('.sidebar__category-drop').slideToggle();
+    })
+    .on('click', '.sidebar__mobile-control', function(){
+      $(this).toggleClass('is-opened');
+      if ( $(this).is('.is-opened') ){
+        $(this).find('> span').text('Скрыть меню');
+      } else {
+        $(this).find('> span').text('Раскрыть меню');
+      }
+      $('.sidebar__category').slideToggle();
+    })
+
 
   //////////
   // MODALS

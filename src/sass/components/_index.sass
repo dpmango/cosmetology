@@ -65,6 +65,10 @@
     .slick-prev
       left: -35px
 
++r($tablet)
+  .m-slick-arrows
+    .slick-next, .slick-prev
+      font-size: 18px
 
 .m-abs-controls
   .slick-next
@@ -79,6 +83,21 @@
     bottom: 0
     left: 0
     right: 0
+
++r($desktop)
+  .m-abs-controls
+    .slick-next
+      right: 25px
+    .slick-prev
+      left: 25px
+
++r($mobile)
+  .m-abs-controls
+    .slick-next
+      right: 15px
+    .slick-prev
+      left: 15px
+
 
 /* title
 .title
@@ -261,3 +280,21 @@
     min-width: 0
     min-height: 1px
     padding-left: 15px
+    p
+      position: relative
+      font-size: 16px
+      line-height: 1.5
+      color: $colorGray
+      font-family: 'Roboto Slab', sans-serif
+    .text-title
+      margin-top: 30px
+      &:first-child
+        margin-top: -0px
+
++r($desktop)
+  .p-row
+    flex-direction: column
+    &__col
+      flex: 0 0 auto
+      width: 100%
+      padding-left: 0

@@ -1,0 +1,271 @@
+---
+title: Services detail
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Услуги
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Услуги
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+  // SERVICES :: START
+  .section
+    .container
+      // title block
+      .title.title--desc-only.wow
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // row
+      .p-row
+        .sidebar
+          .sidebar__inner
+            .sidebar__mobile-control
+              span раскрыть меню
+              .sidebar__mobile-control-icon
+                span
+                span
+            // category =
+            .sidebar__category
+              .sidebar__category-top.is-opened
+                .sidebar__category-num 01.
+                .sidebar__category-name косметология
+              .sidebar__category-drop.is-opened
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 02.
+                .sidebar__category-name эстетическая косметология
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category =
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 03.
+                .sidebar__category-name пластическая хирургия
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 04.
+                .sidebar__category-name реабилитация
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+                    
+        .p-row__col
+          .text-title.wow Что такое ...
+          .text__wrapper.wow
+            p <span class="first-letter">W</span> cience cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
+            p As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man. Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+
+            p NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go. The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.
+        
+          
+          .text-title.wow показания к процедуре
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+            
+          .text-title.wow какие результаты
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+            
+          .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+              
+            // slide
+            .photo-slide.photo-slide--right
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          
+          .text-title.wow На каком аппарате
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+            
+          .text-title.wow как проводится?
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+            
+          .text-title.wow противопоказания
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+            
+          .text-title.wow видео
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+            
+              
+          .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+              
+            // slide
+            .photo-slide.photo-slide--right
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          
+          .text-title.wow Прайс-лист
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          
+          // price row
+          .price-row
+            .price-row__name название элемента
+            .price-row__price 2 000 руб.
+            .price-row__cta
+              a(href="#").btn.btn-red
+                span Записаться
+                
+          // price row
+          .price-row
+            .price-row__name название элемента
+            .price-row__price 2 000 руб.
+            .price-row__cta
+              a(href="#").btn.btn-red
+                span Записаться   
+            
+          // price row
+          .price-row
+            .price-row__name название элемента
+            .price-row__price 2 000 руб.
+            .price-row__cta
+              a(href="#").btn.btn-red
+                span Записаться 
+                      
+          .text-title.wow наши специалисты
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          
+          .experts-slider(js-slider-col-2).m-slick-arrows.m-slick-dots
+            // expert
+            .expert-slide
+              .expert-slide__image
+                img(src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
+              .expert-slide__name иванова наталья
+              .expert-slide__position врач-косметолог
+              .expert-slide__cta
+                a(href="#").btn.btn-red.btn--block
+                  span Записаться
+            // expert
+            .expert-slide
+              .expert-slide__image
+                img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+              .expert-slide__name иванова наталья
+              .expert-slide__position врач-косметолог
+              .expert-slide__cta
+                a(href="#").btn.btn-red.btn--block
+                  span Записаться
+            // expert
+            .expert-slide
+              .expert-slide__image
+                img(src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
+              .expert-slide__name иванова наталья
+              .expert-slide__position врач-косметолог
+              .expert-slide__cta
+                a(href="#").btn.btn-red.btn--block
+                  span Записаться
+  
+  
+          .text-title.wow Вопросы и ответы
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+                  
+          // TABS 
+          .tabs
+            // item
+            .tabs__item.wow
+              .tabs__item-name 1. Что такое силикон?
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            // item
+            .tabs__item.wow
+              .tabs__item-name 2. Безопасны ли силиконовые импланты?
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            // item
+            .tabs__item.wow
+              .tabs__item-name 3. Что такое капсулярная контрактура?
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            // item
+            .tabs__item.wow
+              .tabs__item-name 4. В чем причина формирования капсулы вокруг импланта?
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            // item
+            .tabs__item.wow
+              .tabs__item-name 5. Могу ли я летать в самолетах?
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+                              
+                    
+          .text-title.wow Отзывы
+          p A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+                  
+          // TABS 
+          .tabs
+            // item
+            .tabs__item.wow
+              .tabs__item-name 1. Александр
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            // item
+            .tabs__item.wow
+              .tabs__item-name 2. Татьяна
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            // item
+            .tabs__item.wow
+              .tabs__item-name 3. Аксинья
+              .tabs__item-drop
+                p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
