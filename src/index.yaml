@@ -5,3 +5,5 @@ PageList:
   ready: 100
 - file: about.html
   ready: 50
+- file: contact.html
+  ready: 50

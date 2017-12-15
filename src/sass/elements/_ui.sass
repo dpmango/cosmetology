@@ -2,15 +2,38 @@
 
 
 // THIS IS REGULAR CLASS MODIFIER FOR THE INPUT IT
-.ui-input
-  display: block
-  width: 100%
-  -webkit-appearance: none
-  background: white
-  color: $grayColor
-  border: 1px solid $borderColor
-  border-radius: 4px
-  padding: 12px 15px
+.ui-group
+  position: relative
+  input, textarea
+    display: block
+    width: 100%
+    -webkit-apeerance: none
+    background: white
+    padding: 17px 5%
+    border: 1px solid $colorRed
+    +history
+    font-size: 18px
+    +tr
+    // line-height: 80px
+    &:focus
+      box-shadow: 3px 2px 0px $colorRed
+    &::placeholder
+      color: rgba($fontColor, .7)
+
+  &.has-error
+    input, textarea
+      color: $colorRed
+
+  textarea
+    resize: vertical
+    min-height: 220px
+
+.ui-input__validation
+  color: $colorRed
+  font-size: 12px
+  // position: absolute
+  // bottom: 0
+  // left: 0
 
 
 // Checkbox

@@ -1,0 +1,107 @@
+---
+title: About
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderInner.jpg" srcset="img/sliderInner@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Контакты
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderInner.jpg" srcset="img/sliderInner@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Контакты
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+
+  // CONTACT :: START
+  .section
+    .container
+      // title block
+      .title.title--desc-only
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // contact
+      .contact
+        .contact__wrapper
+          .contact__col
+            .contact__head Адрес
+            .contact__content
+              span г. Москва, 
+              span ул. Новый Арбат 36/9, корпус 2
+          // col
+          .contact__col
+            .contact__head Телефон
+            .contact__content
+              span 
+                a(href="tel:88005009834") 8(800)500-98-34
+              span
+                a(href="tel:84956465664") +7(495)645-56-64
+          // col
+          .contact__col
+            .contact__head e-mail
+            .contact__content
+              span 
+                a(href="mailto:info@svs-cosmetology.ru") info@svs-cosmetology.ru
+          // col
+          .contact__col
+            .contact__head соц.сети
+            .contact__content
+              .footer__socials
+                a(href="#").social.social--small.social--facebook
+                  +icon('ico-social-facebook')
+                a(href="#").social.social--small.social--youtube
+                  +icon('ico-social-youtube')
+                a(href="#").social.social--small.social--instagram
+                  +icon('ico-social-instagram')
+                a(href="#").social.social--small.social--vk
+                  +icon('ico-social-vk')
+        
+    // map
+    .contact-map
+      #contact-map  
+
+
+  include components/_how-to-get
+        
+
+  // CONTACT - FORM :: START
+  .section
+    .container
+      // title block
+      .title
+        .title__name Свяжитесь с нами
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      form(action="" js-validate-contact).contact-form
+        .contact-form__top
+          .ui-group
+            input(type="text" name="name" placeholder="Имя")
+          .ui-group
+            input(type="email" name="email" placeholder="Email")
+          .ui-group
+            input(type="tel" name="phone" placeholder="Телефон")
+        
+        .ui-group
+          textarea(placeholder="Сообщение" name="text")
+        
+        .contact-form__cta
+          button(type="submit").btn.btn-red
+            span Отправить
+            

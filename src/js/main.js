@@ -40,6 +40,26 @@ $(document).ready(function(){
   }
 
   //////////
+  // DEVELOPMENT HELPER
+  //////////
+  var prevBg;
+  function setBreakpoint(){
+    var wWidth = _window.width();
+
+    var content = "<div class='dev-bp-debug'>"+wWidth+"</div>";
+
+    $('.page').append(content);
+    setTimeout(function(){
+      $('.dev-bp-debug').fadeOut();
+    },1000);
+    setTimeout(function(){
+      $('.dev-bp-debug').remove();
+    },1500)
+  }
+
+  _window.on('resize', debounce(setBreakpoint, 200))
+  
+  //////////
   // COMMON
   //////////
 
@@ -62,7 +82,7 @@ $(document).ready(function(){
     initFitText();
 
     revealFooter();
-    _window.resized(100, revealFooter);
+    _window.on('resize', throttle(revealFooter, 100));
 
   }
 
@@ -114,7 +134,7 @@ $(document).ready(function(){
   // add .header-static for .page or body
   // to disable sticky header
   if ( $('.header-static').length == 0 ){
-    _window.scrolled(10, function() { // scrolled is a constructor for scroll delay listener
+    _window.on('scroll', throttle(function() { // scrolled is a constructor for scroll delay listener
       var vScroll = _window.scrollTop();
       var header = $('.header').not('.header--static');
       var headerHeight = header.height();
@@ -131,7 +151,7 @@ $(document).ready(function(){
       } else {
         header.removeClass('header--fixed');
       }
-    });
+    }, 10));
   }
 
   // HAMBURGER TOGGLER
@@ -180,6 +200,8 @@ $(document).ready(function(){
 
       _this.fitText(1, {minFontSize: min, maxFontSize: max})
     })
+
+    $('.title__name').fitText(1, {minFontSize: '24px', maxFontSize: '100px'})
 
   }
 
@@ -447,6 +469,23 @@ $(document).ready(function(){
   $("input[type='tel']").mask("+7 (000) 000-0000", {placeholder: "+7 (___) ___-____"});
 
 
+  // textarea autoExpand
+  $(document)
+    .one('focus.autoExpand', '.ui-group textarea', function(){
+        var savedValue = this.value;
+        this.value = '';
+        this.baseScrollHeight = this.scrollHeight;
+        this.value = savedValue;
+    })
+    .on('input.autoExpand', '.ui-group textarea', function(){
+        var minRows = this.getAttribute('data-min-rows')|0, rows;
+        this.rows = minRows;
+        rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
+        this.rows = minRows + rows;
+    });
+
+
+
   ////////////
   // SCROLLMONITOR - WOW LIKE
   ////////////
@@ -515,7 +554,7 @@ $(document).ready(function(){
   // YANDEX MAPS
   ////////////
 
-  if ( $("contact-map").length > 0 ){
+  if ( $(".contact-map").length > 0 ){
     ymaps.ready(init);
   }
   var myMap,

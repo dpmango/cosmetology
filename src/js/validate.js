@@ -59,39 +59,29 @@ $(document).ready(function(){
   /////////////////////
   // REGISTRATION FORM
   ////////////////////
-  $(".js-registration-form").validate({
+  $("[js-validate-contact]").validate({
     errorPlacement: validateErrorPlacement,
     highlight: validateHighlight,
     unhighlight: validateUnhighlight,
     submitHandler: validateSubmitHandler,
     rules: {
-      last_name: "required",
-      first_name: "required",
+      name: "required",
       email: {
         required: true,
         email: true
       },
-      password: {
-        required: true,
-        minlength: 6,
-      }
-      // phone: validatePhone
+      phone: validatePhone
     },
     messages: {
-      last_name: "Заполните это поле",
-      first_name: "Заполните это поле",
+      name: "Заполните это поле",
       email: {
           required: "Заполните это поле",
           email: "Email содержит неправильный формат"
       },
-      password: {
+      phone: {
           required: "Заполните это поле",
-          email: "Пароль мимимум 6 символов"
-      },
-      // phone: {
-      //     required: "Заполните это поле",
-      //     minlength: "Введите корректный телефон"
-      // }
+          minlength: "Введите корректный телефон"
+      }
     }
   });
 
