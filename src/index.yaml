@@ -9,3 +9,5 @@ PageList:
   ready: 50
 - file: services-list.html
   ready: 50
+- file: services-category.html
+  ready: 50

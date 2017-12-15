@@ -1,0 +1,83 @@
+---
+title: Services category
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Услуги
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Услуги
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+  // SERVICES :: START
+  .section
+    .container
+      // title block
+      .title.title--desc-only.wow
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // row
+      .p-row
+        .sidebar
+          .sidebar__inner
+            // category =
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 01.
+                .sidebar__category-name косметология
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 02.
+                .sidebar__category-name эстетическая косметология
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category =
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 03.
+                .sidebar__category-name пластическая хирургия
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 04.
+                .sidebar__category-name реабилитация
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+                    
+        .p-row__col
+      
+      

@@ -1,0 +1,71 @@
+/* sidebar
+.sidebar
+  flex: 0 1 33.3%
+  min-width: 0
+  min-height: 1px
+  padding-right: 15px
+  &__inner
+    padding: 30px 10%
+    background: #F7F7F7
+  &__category
+    margin-right: 30px
+    &-top
+      position: relative
+      +history
+      cursor: pointer
+      padding: 15px 0
+      border-bottom: 1px solid #CCCCCC
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        top: 40px
+        // transform: translateY(-50%)
+        right: -30px
+        background: svg-load('../icons/menu-drop.svg') no-repeat center
+        size: 16px 10px
+        +tr
+      &:hover
+        &::after
+          background-image: svg-load('../icons/menu-drop-red.svg')
+
+      &.is-opened
+        border-color: #212526
+        &::after
+          background-image: svg-load('../icons/menu-drop-red.svg')
+          transform: rotate(180deg)
+
+    &-num
+      font-size: 12px
+    &-name
+      margin-top: 5px
+      +history
+      font-size: 24px
+
+    &-drop
+      display: none
+      +history
+      font-size: 14px
+      line-height: 1.28em
+      padding: 10px 0
+      border-bottom: 1px solid #CCCCCC
+      a
+        position: relative
+        display: block
+        padding: 8px 0 8px 30px
+        +tr
+        &::after
+          display: inline-block
+          content: ' '
+          width: 16px
+          height: 1px
+          background: $fontColor
+          position: absolute
+          top: 12px
+          left: 0
+          +tr
+        &:hover
+          color: $colorRed
+          &::after
+            background: $colorRed
+            transform: translateX(-5px)

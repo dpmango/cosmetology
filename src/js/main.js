@@ -58,7 +58,7 @@ $(document).ready(function(){
   }
 
   _window.on('resize', debounce(setBreakpoint, 200))
-  
+
   //////////
   // COMMON
   //////////
@@ -330,6 +330,11 @@ $(document).ready(function(){
     // .on('click', '[js-mobile-nav] > li > ul', function(e){
     //   e.stopPropagation();
     // })
+
+  _document.on('click', '.sidebar__category-top', function(){
+    $(this).toggleClass('is-opened');
+    $(this).parent().find('.sidebar__category-drop').slideToggle();
+  })
 
   //////////
   // MODALS
