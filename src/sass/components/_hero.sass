@@ -22,9 +22,24 @@
     bottom: 0
     left: 36px
     z-index: 3
+    cursor: pointer
     svg .oval
       transform: translate3d(0,0px,0)
       animation: scrollDown 2s ease infinite
+
+  &--inner
+    &::after
+      display: none
+    > .container
+      min-height: 500px
+      height: calc(100vh - 115px)
+      max-height: 800px
+    .scrolldown
+      bottom: 4vh
+      svg g
+        fill: white
+      svg circle
+        stroke: white
 
 @keyframes scrollDown
   0%
@@ -186,3 +201,80 @@
       width: calc(100% - 40px)
     &__title
       font-size: 32px
+
+
+
+
+/* SLIDER
+.slider
+  position: absolute
+  top: 115px
+  left: 0
+  right: 0
+  z-index: 2
+
+.slider-slide
+  position: relative
+  min-height: 500px
+  height: calc(100vh - 115px)
+  max-height: 800px
+  &-bg
+    display: block
+    max-width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    object-fit: cover
+    z-index: 1
+  &::before
+    display: inline-block
+    content: ' '
+    position: absolute 0
+    z-index: 2
+    background: rgba(#212526, .4)
+
+  &__content
+    position: absolute 0
+    padding: 80px 25px 40px 25px
+    z-index: 3
+    display: flex
+    flex-direction: column
+    justify-content: center
+    color: white
+    text-align: center
+
+  &__title
+    position: relative
+    font-size: 70px
+    padding-bottom: 15px
+    margin-bottom: 35px
+    +history
+    &::after
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      display: inline-block
+      content: ' '
+      width: 130px
+      height: 1px
+      background: white
+
+
+.breadcrumbs
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+    &::after
+      display: inline-block
+      content: '>'
+      font-size: 16px
+      margin: 0 5px
+  span
+    display: inline-block

@@ -284,9 +284,14 @@ $(document).ready(function(){
         // _window.trigger('resize')
       }, 200)
     }
-
-
     // e.preventDefault();
+  })
+
+  //////////
+  // SCROLLDOWN
+  //////////
+  _document.on('click', '[js-scrolldown]', function(){
+    $(this).closest('section')
   })
 
 
@@ -342,20 +347,20 @@ $(document).ready(function(){
     }
   });
 
-  // $('.popup-gallery').magnificPopup({
-	// 	delegate: 'a',
-	// 	type: 'image',
-	// 	tLoading: 'Loading image #%curr%...',
-	// 	mainClass: 'mfp-img-mobile',
-	// 	gallery: {
-	// 		enabled: true,
-	// 		navigateByImgClick: true,
-	// 		preload: [0,1]
-	// 	},
-	// 	image: {
-	// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-	// 	}
-	// });
+  $('[js-popup-gallery]').magnificPopup({
+		delegate: 'img',
+		type: 'image',
+		tLoading: 'Загрузка #%curr%...',
+		mainClass: 'popup-buble',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1]
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+		}
+	});
 
 
   ////////////
@@ -496,7 +501,9 @@ $(document).ready(function(){
   // YANDEX MAPS
   ////////////
 
-  ymaps.ready(init);
+  if ( $("contact-map").length > 0 ){
+    ymaps.ready(init);
+  }
   var myMap,
       myPlacemark;
 

@@ -66,6 +66,19 @@
       left: -35px
 
 
+.m-abs-controls
+  .slick-next
+    right: 45px
+    color: white
+
+  .slick-prev
+    left: 45px
+    color: white
+  .slick-dots
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
 
 /* title
 .title
@@ -101,6 +114,21 @@
     font-size: 16px
     line-height: 1.375
     text-align: center
+
+  &--desc-only
+    position: relative
+    padding-top: 60px
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute
+      top: 0px
+      left: 50%
+      transform: translateX(-50%)
+      height: 60px
+      width: 2px
+      background: currentColor
+
 
 +r($desktop)
   .title
