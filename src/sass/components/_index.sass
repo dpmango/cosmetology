@@ -102,7 +102,27 @@
     line-height: 1.375
     text-align: center
 
++r($desktop)
+  .title
+    &__name
+      font-size: 85px
 
++r($tablet)
+  .title
+    &__name
+      font-size: 70px
+
++r($mobile)
+  .title
+    padding: 60px 0 40px 0
+    &__name
+      font-size: 28px
+      &::after
+        height: 30px
+        bottom: 50px
+        width: 1px
+    &__description
+      font-size: 14px
 
 /* Shadow image
 .shadow-image
@@ -180,6 +200,10 @@
   .ui-checkbox
     margin: 10px 2%
 
++r($tablet)
+  .slide-tabs
+    flex-direction: column
+    align-items: flex-start
 
 /* slide tab
 .slide-tab
@@ -192,3 +216,8 @@
     text-align: center
     +history
     font-size: 46px
+
++r($tablet)
+  .slide-tab
+    &__heading
+      font-size: 28px

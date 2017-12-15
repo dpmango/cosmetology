@@ -177,10 +177,11 @@ $(document).ready(function(){
       var min = $(this).data('min') || "20px";
       var max = $(this).data('max') || "70px";
 
-      _this.fitText(0.8, {minFontSize: min, maxFontSize: max})
+      console.log(max)
+
+      _this.fitText(1, {minFontSize: min, maxFontSize: max})
     })
 
-    .fitText(0.8, {minFontSize: '20px'})
   }
 
   //////////
@@ -225,7 +226,21 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 3,
       accessibility: false,
-      adaptiveHeight: false
+      adaptiveHeight: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 568,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
     })
 
     $('[js-slider-col-2]').slick({
@@ -239,7 +254,15 @@ $(document).ready(function(){
       slidesToShow: 2,
       slidesToScroll: 2,
       accessibility: false,
-      adaptiveHeight: false
+      adaptiveHeight: false,
+      responsive: [
+        {
+          breakpoint: 568,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
     })
 
   }
@@ -252,8 +275,17 @@ $(document).ready(function(){
     var choosenTab = $(this).data('tab-for');
     var tabTarget = $('[data-tab="'+choosenTab+'"]');
 
-    tabTarget.addClass('is-active').siblings().removeClass('is-active')
-    //
+    tabTarget.addClass('is-active').siblings().removeClass('is-active');
+    $(this).parent().siblings().find('input').prop('checked', false)
+
+    if ( tabTarget.find('.slick-slider').length > 0 ){
+      setTimeout(function() {
+        tabTarget.find('.slick-slider').resize();
+        // _window.trigger('resize')
+      }, 200)
+    }
+
+
     // e.preventDefault();
   })
 

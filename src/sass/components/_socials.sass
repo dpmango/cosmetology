@@ -33,6 +33,7 @@
     margin-top: 30px
     +tr
     img
+      width: 100%
       max-width: 100%
 
     &:hover
@@ -86,3 +87,19 @@
     size: 36px
     .ico
       transform: scale(.6)
+
++r($desktop)
+  .socials
+    &__col
+      flex: 0 1 50%
+      width: 50%
+      &:nth-child(3)
+        display: none
+
++r($tablet)
+  .socials
+    &__col
+      flex: 0 0 auto
+      width: 100%
+      &:nth-child(2)
+        display: none

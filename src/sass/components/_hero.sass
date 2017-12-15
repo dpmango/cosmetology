@@ -15,6 +15,7 @@
     position: relative
     min-height: calc(500px + 8vh + 8px)
     height: calc(100vh - 115px)
+    max-height: calc(800px + 115px - 30px)
 
   .scrolldown
     position: absolute
@@ -64,6 +65,7 @@
     flex-direction: column
     min-height: 500px
     height: calc(100vh - 115px - 8px - 8vh)
+    max-height: 800px
     padding: 50px calc( ((2/12) * 100%) + 30px) 50px 30px
   &__right
     position: absolute
@@ -98,22 +100,89 @@
     text-align: right
 
   &__title
+    position: relative
+    display: block
     width: 100%
     margin-top: auto
     font-size: 70px
     line-height: 1
     +history
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute
+      bottom: -40px
+      right: -40px
+      width: 100px
+      height: 1px
+      background: white
+      mix-blend-mode: multiply
+      z-index: 5
 
   &__text
     margin-top: 80px
     font-size: 16px
     line-height: 1.3
+    padding-left: 20%
 
   &__cta
     margin-top: 40px
     margin-bottom: auto
 
-+r($hd)
++r($wide)
   .hero-slide
     &__title
-      font-size: 60px
+      font-size: 53px
+
++r($desktop)
+  .hero
+    > .container
+      position: relative
+      min-height: 670px
+      height: calc(100vh + 8vh + 20px)
+      max-height: auto
+
+  .hero-slide
+    &__left
+      min-height: 670px
+      height: 100vh
+      max-height: auto
+      flex-basis: 100%
+      padding-right: 30px
+    &__right
+      width: 100%
+      flex: 0 1 100%
+      max-width: 440px
+      top: 60px
+      left: 50%
+      transform: translateX(-50%)
+    &__content
+      padding-top: 355px
+      text-align: center
+    &__title
+      &::after
+        display: none
+
+    &__text
+      margin-top: 30px
+      padding-left: 0
+      max-width: 570px
+      margin-left: auto
+      margin-right: auto
+    &__cta
+      margin-top: 25px
+
++r($tablet)
+  .hero
+    &::after
+      display: none
+
+  .hero-slide
+    margin-left: -15px
+    margin-right: -15px
+    &__left
+      padding: 40px 20px 50px 30px
+    &__right
+      width: calc(100% - 40px)
+    &__title
+      font-size: 32px

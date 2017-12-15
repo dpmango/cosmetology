@@ -35,3 +35,28 @@
     > div
       flex: 1 1 auto
       width: 100%
+
++r($desktop)
+  .contact
+    &__wrapper
+      flex-wrap: wrap
+    &__col
+      flex: 0 1 50%
+      width: 50%
+      padding: 15px 0
+    &__content
+      margin-top: 15px
+
++r($tablet)
+  .contact-map
+    height: 400px
+
++r($mobile)
+  .contact
+    &__wrapper
+      flex-direction: column
+    &__col
+      flex: 0 0 auto
+      width: 100%
+  .contact-map
+    height: 290px

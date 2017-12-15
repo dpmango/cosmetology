@@ -40,3 +40,26 @@
       &:hover
         background: $colorRed
         color: white
+
++r($tablet)
+  .cta-form
+    &__options
+      flex-direction: column
+      align-items: flex-start
+    &__inputs
+      flex-direction: column
+      height: auto
+    input
+      flex: 0 0 auto
+      height: 48px
+    button
+      flex: 0 0 auto
+      height: 48px
+      margin-left: 0
+      margin-top: 10px
+
++r($mobile)
+  .cta-form
+    &__inputs
+      margin-top: 20px
+      

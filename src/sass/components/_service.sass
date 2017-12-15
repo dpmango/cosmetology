@@ -63,3 +63,44 @@
   .service
     &__text
       // padding-left: 10%
+
++r($desktop)
+  .service
+    &__title
+      padding-top: 50px
+      &::before
+        height: 30px
+        width: 1px
+      &-name
+        font-size: 44px
+    &__text
+      padding-left: 15%
+
++r($tablet)
+  .service
+    flex-direction: column
+    &--reverse
+      text-align: left
+      .service
+        &__text
+          padding-left: 20%
+          padding-right: 10%
+    &__col
+      &:first-child
+        padding-right: 0
+        padding-bottom: 20px
+
+    &__title
+      padding-top: 20px
+      &::before
+        display: none
+
+    &__text
+      padding-left: 20
+      padding-right: 10%
+
++r($mobile)
+  .service
+    &__title
+      &-name
+        font-size: 24px

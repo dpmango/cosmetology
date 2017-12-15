@@ -34,3 +34,21 @@
   &__text
     margin-top: 30px
     color: $colorGray
+
++r($tablet)
+  .equal-slide
+    &__wrapper
+      flex-direction: column-reverse
+    &__left, &__right
+      flex: 0 0 auto
+      width: 100%
+      background: transparent
+    &__left
+      padding: 40px 5%
+    &__text
+      margin-top: 10px
+
++r($mobile)
+  .equal-slide
+    &__title
+      font-size: 24px
