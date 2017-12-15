@@ -1,0 +1,100 @@
+---
+title: News list
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title новости
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title новости
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+  // SERVICES :: START
+  .section
+    .container
+      // title block
+      .title.title--desc-only.wow
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      .news-grid(js-load-more-faker)
+        // slide
+        .news-slide.wow
+          .news-slide__wrap
+            a(href="#").news-slide__image
+              img(src='img/newsSlide1.jpg' srcset='img/newsSlide1@2x.jpg 2x')
+            .news-slide__content
+              .news-slide__date 17.09.2017
+              a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+              .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide.wow
+          .news-slide__wrap
+            a(href="#").news-slide__image
+              img(src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
+            .news-slide__content
+              .news-slide__date 17.09.2017
+              a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+              .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide.wow
+          .news-slide__wrap
+            a(href="#").news-slide__image
+              img(src='img/newsSlide3.jpg' srcset='img/newsSlide3@2x.jpg 2x')
+            .news-slide__content
+              .news-slide__date 17.09.2017
+              a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+              .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide.wow
+          .news-slide__wrap
+            a(href="#").news-slide__image
+              img(src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
+            .news-slide__content
+              .news-slide__date 17.09.2017
+              a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+              .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide.wow
+          .news-slide__wrap
+            a(href="#").news-slide__image
+              img(src='img/newsSlide3.jpg' srcset='img/newsSlide3@2x.jpg 2x')
+            .news-slide__content
+              .news-slide__date 17.09.2017
+              a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+              .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide.wow
+          .news-slide__wrap
+            a(href="#").news-slide__image
+              img(src='img/newsSlide1.jpg' srcset='img/newsSlide1@2x.jpg 2x')
+            .news-slide__content
+              .news-slide__date 17.09.2017
+              a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+              .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+
+      // load more
+      .load-more
+        a(href="#" js-load-more).btn.btn-red
+          span Загрузить еще
+          

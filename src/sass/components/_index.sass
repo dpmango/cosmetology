@@ -171,6 +171,18 @@
     &__description
       font-size: 14px
 
+
+.small-title
+  text-align: center
+  margin: 35px 0
+  +history
+  font-size: 48px
+
++r($tablet)
+  .small-title
+    font-size: 24px
+
+
 /* Shadow image
 .shadow-image
   flex: 1 1 auto
@@ -298,3 +310,102 @@
       flex: 0 0 auto
       width: 100%
       padding-left: 0
+
+
+/* load more
+.load-more
+  margin-top: 10px
+  text-align: center
+  .btn
+    width: calc(33.3% - 24px)
+    max-width: 380px
+
+
++r($desktop)
+  .load-more
+    .btn
+      width: 100%
+      max-width: 320px
+
+
+/* page nav
+.page-nav
+  padding: 30px 0
+  margin: 15px 0
+  display: flex
+  border-bottom: 1px solid $fontColor
+  &__prev, &__next
+    position: relative
+    display: flex
+    align-items: stretch
+    flex: 0 1 50%
+    min-height: 90px
+    .ico
+      font-size: 30px
+      align-self: center
+      +tr
+    &:hover
+      .ico
+        fill: $colorRed
+
+  &__prev
+    .page-nav__content
+      margin-left: 10%
+    &::after
+      display: inline-block
+      content: ' '
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      height: 60px
+      width: 1px
+      background: $fontColor
+    &:hover
+      .ico
+        transform: translateX(-20px)
+
+  &__next
+    text-align: right
+    .page-nav__content
+      margin-left: auto
+      margin-right: 10%
+    .ico
+      transform: rotate(180deg)
+    &:hover
+      .ico
+        transform: rotate(180deg) translateX(-20px)
+
+  &__content
+    flex: 0 1 auto
+    display: flex
+    flex-direction: column
+    padding: 0 15px
+
+  &__name
+    font-size: 12px
+    color: $colorGray
+    +history
+  &__date
+    margin-top: auto
+    color: $colorGray
+  &__title
+    margin-top: 5px
+    +history
+    font-size: 18px
+
++r($tablet)
+  .page-nav
+    flex-direction: column
+    &__prev, &__next
+      flex: 0 0 auto
+    &__title
+      font-size: 16px
+    &__prev
+      margin-bottom: 80px
+      &::after
+        bottom: -60px
+        top: auto
+        left: 50%
+        height: 30px
+        transform: translateX(-50%)

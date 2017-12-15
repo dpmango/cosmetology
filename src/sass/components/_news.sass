@@ -2,11 +2,42 @@
   .slick-list
     margin: 0 -10px
 
+.news-grid
+  display: flex
+  flex-wrap: wrap
+  .news-slide
+    flex: 0 1 33.3%
+    width: 33.3%
+    min-height: 1px
+    min-width: 0
+    margin: 0
+    padding-left: 10px
+    padding-right: 10px
+    background: transparent
+
++r($desktop)
+  .news-grid
+    .news-slide
+      flex-basis: 50%
+      width: 50%
+
++r($tablet)
+  .news-grid
+    flex-direction: column
+    flex-wrap: nowrap
+    .news-slide
+      flex-basis: 100%
+      width: 100%
+
+
 .news-slide
   text-align: center
   padding-bottom: 30px
   background: $grayBg
   margin: 0 10px
+  &__wrap
+    background: $grayBg
+    padding-bottom: 30px
   &__image
     display: block
     +tr
@@ -37,3 +68,10 @@
     margin-top: 30px
     line-height: 1.5
     color: $colorGray
+
+/* news date
+.news-date
+  font-size: 16px
+  color: $colorGray
+  margin-top: 30px
+  margin-bottom: -20px

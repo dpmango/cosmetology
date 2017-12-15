@@ -1,0 +1,104 @@
+---
+title: About
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderNews.jpg" srcset="img/sliderNews@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title новости
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderNews.jpg" srcset="img/sliderNews@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title новости
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+  // TEXT :: START
+  .section.text
+    .container
+      // title block
+      .title.title--desc-only.wow
+        .news-date 1 июля 2017
+        .small-title название новости
+        .title__description As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
+      
+      // text wrapper
+      .text__wrapper.wow
+        p <span class="first-letter">W</span> cience cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.
+        p As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man. Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+
+        p NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go. The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.
+      
+      // page nav
+      .page-nav
+        a(href="#").page-nav__prev
+          +icon('ico-back-arrow')
+          .page-nav__content
+            .page-nav__name предыдущая новость
+            .page-nav__date 1 июля 2017
+            .page-nav__title название элемента
+        a(href="#").page-nav__next
+          .page-nav__content
+            .page-nav__name предыдущая новость
+            .page-nav__date 1 июля 2017
+            .page-nav__title название элемента
+          +icon('ico-back-arrow')
+          
+  // SIMILAR NEWS :: START
+  .section
+    .container
+      // title block
+      .small-title.wow похожие новости
+      
+      .news-slider.wow(js-slider-col-3).m-slick-dots.m-slick-arrows
+        // slide
+        .news-slide
+          a(href="#").news-slide__image
+            img(src='img/newsSlide1.jpg' srcset='img/newsSlide1@2x.jpg 2x')
+          .news-slide__content
+            .news-slide__date 17.09.2017
+            a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+            .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide
+          a(href="#").news-slide__image
+            img(src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
+          .news-slide__content
+            .news-slide__date 17.09.2017
+            a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+            .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide
+          a(href="#").news-slide__image
+            img(src='img/newsSlide3.jpg' srcset='img/newsSlide3@2x.jpg 2x')
+          .news-slide__content
+            .news-slide__date 17.09.2017
+            a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+            .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.
+        // slide
+        .news-slide
+          a(href="#").news-slide__image
+            img(src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
+          .news-slide__content
+            .news-slide__date 17.09.2017
+            a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
+            .news-slide__text В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.  
+
+    

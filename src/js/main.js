@@ -374,6 +374,19 @@ $(document).ready(function(){
       $('.sidebar__category').slideToggle();
     })
 
+    // LOAD MORE
+    _document
+      .on('click', '[js-load-more]', function(){
+        // // fake functionality
+        // var contentObj = $('[js-load-more-faker]');
+        //
+        // contentObj.append( contentObj.html() )
+
+        // runScrollMonitor();
+      });
+
+
+
 
   //////////
   // MODALS
@@ -518,7 +531,7 @@ $(document).ready(function(){
       // require
       if ( !monitorActive ){
         monitorActive = true;
-        $('.wow').each(function(i, el){
+        _document.find('.wow').each(function(i, el){
 
           var elWatcher = scrollMonitor.create( $(el) );
 
@@ -649,7 +662,7 @@ $(document).ready(function(){
 
   Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container, newPageRawHTML) {
     monitorActive = false
-    
+
     pageReady();
 
     // close mobile menu

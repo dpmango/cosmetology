@@ -15,9 +15,9 @@ PageList:
   ready: 50
 
 - file: news-list.html
-  ready: 5
+  ready: 50
 - file: news-detail.html
-  ready: 5
+  ready: 50
 - file: price-list.html
   ready: 5
 - file: video.html
