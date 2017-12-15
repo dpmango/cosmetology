@@ -1,0 +1,42 @@
+/* Jobs
+.jobs
+  position: relative
+  margin-bottom: 40px
+  &__item
+    position: relative
+
+    &-name
+      +history
+      font-size: 18px
+      padding: 15px 0
+      border-bottom: 1px solid #EDEBEB
+      cursor: pointer
+      &::after
+        display: inline-block
+        content: ' '
+        position: absolute
+        top: 25px
+        // transform: translateY(-50%)
+        right: 0
+        background: svg-load('../icons/menu-drop.svg') no-repeat center
+        size: 16px 10px
+        +tr
+
+      &:hover
+        &::after
+          background-image: svg-load('../icons/menu-drop-red.svg')
+
+      &.is-opened
+        &::after
+          background-image: svg-load('../icons/menu-drop-red.svg')
+          transform: rotate(180deg)
+
+    &-drop
+      display: none
+      padding: 15px 0
+      p
+        font-size: 16px
+        line-height: 1.5
+        color: $colorGray
+        padding-left: 30px
+        border-left: 1px solid $colorRed

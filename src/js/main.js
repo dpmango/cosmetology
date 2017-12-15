@@ -155,7 +155,6 @@ $(document).ready(function(){
     })
     .on('click', '[js-mobile-nav] > li > ul', function(e){
       e.stopPropagation();
-
     })
 
   // SET ACTIVE CLASS IN HEADER
@@ -291,9 +290,24 @@ $(document).ready(function(){
   // SCROLLDOWN
   //////////
   _document.on('click', '[js-scrolldown]', function(){
-    $(this).closest('section')
+    var el = $(this).closest('.hero').next();
+    $('body, html').animate({
+        scrollTop: $(el).offset().top}, 1000);
+    return false;
   })
 
+
+  // JOBS TOGGLER
+  _document
+    .on('click', '.jobs__item-name', function(){
+
+      $(this).toggleClass('is-opened');
+      $(this).next().slideToggle()
+
+    })
+    // .on('click', '[js-mobile-nav] > li > ul', function(e){
+    //   e.stopPropagation();
+    // })
 
   //////////
   // MODALS
