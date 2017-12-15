@@ -13,3 +13,26 @@ PageList:
   ready: 50
 - file: services-detail.html
   ready: 50
+
+- file: news-list.html
+  ready: 5
+- file: news-detail.html
+  ready: 5
+- file: price-list.html
+  ready: 5
+- file: video.html
+  ready: 5
+- file: i-want-list.html
+  ready: 5
+- file: i-want-category.html
+  ready: 5
+- file: i-want-detail.html
+  ready: 5
+- file: oborudovanie.html
+  ready: 5
+- file: oborudovanie-detail.html
+  ready: 5
+- file: experts.html
+  ready: 5
+- file: order.html
+  ready: 5
