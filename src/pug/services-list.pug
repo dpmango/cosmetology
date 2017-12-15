@@ -1,0 +1,100 @@
+---
+title: Services list
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Услуги
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderServices.jpg" srcset="img/sliderServices@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Услуги
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+  // SERVICES :: START
+  .section
+    .container
+      // title block
+      .title.title--desc-only.wow
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // service
+      .service.wow
+        .service__col
+          .service__title 
+            .service__title-num 01
+            .service__title-name косметология
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link
+              span Подробнее
+              
+        .service__col
+          a(href="#").shadow-image.shadow-image--left
+            img(src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+    
+    .container.container--wide
+      // service
+      .service.service--reverse.wow
+        .service__col
+          .service__title 
+            .service__title-num 02
+            .service__title-name эстетическая гинекология
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link.more-link--left
+              span Подробнее
+              
+        .service__col
+          a(href="#").shadow-image
+            img(src='img/serviceCat_2.jpg' srcset='img/serviceCat_2@2x.jpg')
+    
+    .container
+      // service
+      .service.wow
+        .service__col
+          .service__title 
+            .service__title-num 03
+            .service__title-name пластическая хирургия
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link
+              span Подробнее
+              
+        .service__col
+          a(href="#").shadow-image.shadow-image--left
+            img(src='img/serviceCat_3.jpg' srcset='img/serviceCat_3@2x.jpg')
+    
+      // service
+      .service.service--reverse.wow
+        .service__col
+          .service__title 
+            .service__title-num 04
+            .service__title-name Реабилитация
+          .service__text 
+            p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+            a(href="#").more-link.more-link--left
+              span Подробнее
+              
+        .service__col
+          a(href="#").shadow-image
+            img(src='img/serviceCat_4.jpg' srcset='img/serviceCat_4@2x.jpg')
