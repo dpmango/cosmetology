@@ -2,30 +2,30 @@ ProjectTitle: Project-name
 
 PageList:
 - file: homepage.html
-  ready: 100
+  ready: 80
 - file: about.html
-  ready: 50
+  ready: 80
 - file: contact.html
-  ready: 50
+  ready: 80
 - file: services-list.html
-  ready: 50
+  ready: 80
 - file: services-category.html
-  ready: 50
+  ready: 80
 - file: services-detail.html
-  ready: 50
+  ready: 80
 
 - file: news-list.html
-  ready: 50
+  ready: 80
 - file: news-detail.html
-  ready: 50
+  ready: 80
 - file: price-list.html
-  ready: 5
+  ready: 80
 - file: video.html
-  ready: 5
+  ready: 80
 - file: i-want-list.html
-  ready: 5
+  ready: 80
 - file: i-want-category.html
-  ready: 5
+  ready: 80
 - file: i-want-detail.html
   ready: 5
 - file: oborudovanie.html

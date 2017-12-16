@@ -1,0 +1,79 @@
+---
+title: I want category
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderIwant.jpg" srcset="img/sliderIwant@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Я хочу
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/sliderIwant.jpg" srcset="img/sliderIwant@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title Я хочу
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+            
+  // TEXT :: START
+  .section.text
+    .container
+      // title block
+      .title.wow
+        .title__name категория 1
+        .title__description As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.
+
+      // benefits list
+      .benefits-list
+        .benefits-list__col.wow
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        .benefits-list__col.wow(data-animation-delay=".2s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        .benefits-list__col.wow(data-animation-delay=".3s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        
+        .benefits-list__col.wow(data-animation-delay=".4s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        .benefits-list__col.wow(data-animation-delay=".5s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        .benefits-list__col.wow(data-animation-delay=".6s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        
+        .benefits-list__col.wow(data-animation-delay=".4s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        .benefits-list__col.wow(data-animation-delay=".5s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+        .benefits-list__col.wow(data-animation-delay=".6s")
+          i.icon.icon-benefits
+          p What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.
+                            
+          
+
+    // load more
+    .load-more
+      a(href='#').btn.btn-red
+        span Список всех категорий
