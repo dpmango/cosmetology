@@ -26,6 +26,8 @@
 .benefits-list
   display: flex
   flex-wrap: wrap
+  &--iwant
+    text-align: center
   &__col
     min-width: 0
     min-height: 1px
@@ -33,10 +35,41 @@
     width: 33.3%
     padding: 0 15px
     margin-bottom: 15px
+    +tr
     p
       font-size: 16px
       line-height: 1.5
       color: $colorGray
+  &__title
+    margin-top: 15px
+    +history
+    font-size: 16px
+    letter-spacing: 0.67px
+  &__modal-mobile
+    display: none
+    position: relative
+    border: 1px solid $colorRed
+    border-right: 0px
+    margin: 30px 0 60px 0
+    padding-left: 20px
+    text-align: left
+  &__modal-hide
+    position: absolute
+    bottom: -40px
+    right: 0
+    margin-top: 15px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    color: $colorRed
+    +history
+    .ico
+      font-size: 15px
+    span
+      display: inline-block
+      font-size: 12px
+      margin-left: 8px
+
 
 +r($desktop)
   .benefits-list
@@ -45,6 +78,11 @@
       width: 50%
       &:nth-child(n+5)
         display: none
+      &.is-active
+        .benefits-list__modal-mobile
+          display: block
+        flex-basis: 100%
+        width: 100%
 
 +r($tablet)
   .benefits-list
@@ -53,6 +91,8 @@
     &__col
       flex: 0 0 auto
       width: 100%
+      &.is-active
+        flex-basis: auto
 
 
 /* Content

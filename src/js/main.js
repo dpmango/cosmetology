@@ -395,7 +395,7 @@ $(document).ready(function(){
   function initPopups(){
     // Magnific Popup
     var startWindowScroll = 0;
-    $('.js-popup').magnificPopup({
+    $('[js-popup]').magnificPopup({
       type: 'inline',
       fixedContentPos: true,
       fixedBgPos: true,
@@ -408,14 +408,46 @@ $(document).ready(function(){
       callbacks: {
         beforeOpen: function() {
           startWindowScroll = _window.scrollTop();
-          $('html').addClass('mfp-helper');
+          // $('html').addClass('mfp-helper');
         },
         close: function() {
-          $('html').removeClass('mfp-helper');
+          // $('html').removeClass('mfp-helper');
           _window.scrollTop(startWindowScroll);
         }
       }
     });
+
+    _document.on('click', '[js-popup-i-want]', function(){
+      if ( _window.width() > bp.desktop ){
+        $.magnificPopup.open({
+          items: {
+            src: $(this).attr('href') || $(this).attr('data-mfp-src')
+          },
+          type: 'inline',
+          fixedContentPos: true,
+          fixedBgPos: true,
+          overflowY: 'auto',
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'popup-buble',
+        });
+      } else {
+        $(this).toggleClass('is-active');
+      }
+    })
+
+    if ( _document.find('[js-popup-i-want]').length > 0 ){
+      _window.on('resize', throttle(closeMfp, 200))
+    }
+
+    function closeMfp(){
+      if ( _window.width() < bp.desktop ){
+        $.magnificPopup.close();
+      }
+    }
+
 
     $('[js-popup-gallery]').magnificPopup({
   		delegate: 'img',
