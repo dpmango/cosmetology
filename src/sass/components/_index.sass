@@ -39,8 +39,13 @@
           border-color: $colorRed
 
 /* slick arrows
+
+.slick-next, .slick-prev
+  display: none !important
+
 .m-slick-arrows
   .slick-next, .slick-prev
+    display: inline-block !important
     position: absolute
     top: 50%
     transform: translateY(-50%)
@@ -215,6 +220,7 @@
 
 /* more link
 .more-link
+  display: inline-block
   position: relative
   font-size: 18px
   color: $fontColor
@@ -224,7 +230,7 @@
     +tr
     &::after
       position: absolute
-      top: 50%
+      top: 55%
       right: 0
       display: inline-block
       content: ' '
@@ -409,3 +415,35 @@
         left: 50%
         height: 30px
         transform: translateX(-50%)
+
+
+/* testimonial
+.testimonial-item
+  margin: 30px 0
+  &__head
+    display: flex
+    align-items: center
+    padding-bottom: 15px
+    border-bottom: 1px solid #EDEBEB
+  &__name
+    +history
+    font-size: 18px
+  &__icons
+    margin-left: auto
+    display: flex
+    align-items: center
+    font-size: 18px
+    color: $colorRed
+    a
+      display: inline-block
+      margin-right: 24px
+      +tr
+      &:last-child
+        margin-right: 15px
+      &:hover
+        color: $fontColor
+  &__text
+    margin: 30px 0 50px 0
+    padding-left: 15px
+    border-left: 1px solid $colorRed
+    color: $fontColor

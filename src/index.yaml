@@ -26,6 +26,8 @@ PageList:
   ready: 80
 - file: i-want-category.html
   ready: 80
+- file: results-detail.html
+  ready: 80
 - file: oborudovanie.html
   ready: 5
 - file: oborudovanie-detail.html

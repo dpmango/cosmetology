@@ -1,0 +1,192 @@
+---
+title: Results detail
+bodyClass: inner
+---
+extends shared/_layout
+block content
+
+  // HERO SLIDER :: START
+  .hero.hero--inner
+    .container
+      .scrolldown(js-scrolldown data-animation-delay=".3s").wow
+        include ../icons/scrollDown.svg
+      
+    .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/slidereResults.jpg" srcset="img/slidereResults@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title результаты лечения
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас
+      //slide
+      .slider-slide
+        img.slider-slide-bg(img="img/slidereResults.jpg" srcset="img/slidereResults@2x.jpg 2x")
+        .slider-slide__content
+          .slider-slide__title результаты лечения
+          .breadcrumbs
+            a(href="#") Главная
+            span О нас  
+            
+            
+  // SERVICES :: START
+  .section
+    .container
+      // title block
+      .title.title--desc-only.wow
+        .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
+      
+      // row
+      .p-row
+        .sidebar
+          .sidebar__inner
+            .sidebar__mobile-control
+              span раскрыть меню
+              .sidebar__mobile-control-icon
+                span
+                span
+            // category =
+            .sidebar__category
+              .sidebar__category-top.is-opened
+                .sidebar__category-num 01.
+                .sidebar__category-name косметология
+              .sidebar__category-drop.is-opened
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 02.
+                .sidebar__category-name эстетическая косметология
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category =
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 03.
+                .sidebar__category-name пластическая хирургия
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+            // category
+            .sidebar__category
+              .sidebar__category-top
+                .sidebar__category-num 04.
+                .sidebar__category-name реабилитация
+              .sidebar__category-drop
+                a(href="#") аппаратная косметология
+                a(href="#") инъекционная косметология
+                a(href="#") терапевтическая косметология
+                    
+        .p-row__col
+          .text-title.wow название элемента 1
+          
+          .photo-slider.wow(js-slider-col-2).m-slick-dots
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+              
+            // slide
+            .photo-slide.photo-slide--right
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+
+
+          .text-title.wow Диагноз
+          p.wow A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          .more-link
+            a(href="#")
+              span Подробнее
+                
+          .text-title.wow Лечение/коррекция
+          p.wow A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          .more-link
+            a(href="#")
+              span Подробнее
+          
+          .text-title.wow отзыв пациента
+          p.wow A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          .testimonial-item.wow
+            .testimonial-item__head
+              .testimonial-item__name Еленеа
+              .testimonial-item__icons
+                a(href="#")
+                  +icon('ico-image')
+                a(href='#')
+                  +icon('ico-up')
+                  
+            .testimonial-item__text
+              p.wow Я до сих пор нахожусь под впечатлением от Вашей работы, Вы сделали все настолько филигранно, что это не может не вызвать восторг Мне даже не верится, что операция уже прошла, я очень долго ее ждала. В какой-то момент сомневалась и хотела передумать, но Вы мне приснились в ту ночь.
+                
+              
+          .text-title.wow Название элемента 2
+              
+          .photo-slider(js-slider-col-2).m-slick-dots.wow
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+              
+            // slide
+            .photo-slide.photo-slide--right
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+            
+            //slide 
+            .photo-slide.photo-slide--left
+              .photo-slide__content
+                a(href="#").photo-slide__image
+                  img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
+          
+          
+          .text-title.wow Диагноз
+          p.wow A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          .more-link
+            a(href="#")
+              span Подробнее
+                
+          .text-title.wow Лечение/коррекция
+          p.wow A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          .more-link
+            a(href="#")
+              span Подробнее
+          
+          .text-title.wow отзыв пациента
+          p.wow A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. Failure is not an option.
+          .testimonial-item.wow
+            .testimonial-item__head
+              .testimonial-item__name Еленеа
+              .testimonial-item__icons
+                a(href="#")
+                  +icon('ico-image')
+                a(href='#')
+                  +icon('ico-up')
+                  
+            .testimonial-item__text
+              p.wow Я до сих пор нахожусь под впечатлением от Вашей работы, Вы сделали все настолько филигранно, что это не может не вызвать восторг Мне даже не верится, что операция уже прошла, я очень долго ее ждала. В какой-то момент сомневалась и хотела передумать, но Вы мне приснились в ту ночь.
+                
+      
+          a(href='#').btn.btn-red
+            span Загрузить еше
