@@ -17,6 +17,8 @@ html.mfp-helper
   max-width: 1200px
   margin: 40px auto
   position: relative
+  &--narrow
+    max-width: 540px
   .mfp-close
     font-size: 70px
     color: $colorRed
@@ -26,6 +28,18 @@ html.mfp-helper
     +tr
     &:hover
       color: $colorGray
+
+.callback-form-modal
+  .ui-group
+    margin-bottom: 25px
+    input
+      text-align: center
+  .ui-checkbox
+    margin-bottom: 30px
+    label span
+      // color: $colorRed
+      font-size: 12px
+
 
 
 // Fade-zoom animation for first dialog

@@ -31,7 +31,7 @@ header.header
           a(href="contact.html") контакты
 
       .header__cta
-        a(href="#").header__callback
+        a(href="#modalCallback" js-popup).header__callback
           +icon('ico-callback')
           span заказать  звонок
         
@@ -77,3 +77,51 @@ header.header
       a(href="i-want-list.html") я хочу!
     li
       a(href="contact.html") контакты
+
+// HEADER MODALS
+.popup-dialog.popup-dialog--narrow.mfp-hide#modalCallback
+  .container
+    .text-title заказать звонок
+    
+    form.callback-form-modal(action="")
+      .ui-group
+        input(type="text" name="name" placeholder="Имя")
+      .ui-group
+        input(type="tel" name="name" placeholder="Телефон")
+
+      .ui-checkbox
+        input(type="checkbox" name="agree" id="agree")
+        label(for="agree") 
+          span Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
+      .ui-group
+        .btn.btn-red.btn--block
+          span Отправить
+
+// ORDER
+.popup-dialog.mfp-hide#modalOrder
+  .container
+    .text-title запись на прием
+    
+    form(action="" js-validate-contact).contact-form
+      .contact-form__top
+        .ui-group
+          input(type="text" name="name" placeholder="Имя")
+        .ui-group
+          input(type="email" name="email" placeholder="Email")
+        .ui-group
+          input(type="tel" name="phone" placeholder="Телефон")
+      
+      .ui-group
+        textarea(placeholder="Сообщение" name="text")
+      
+      .ui-checkbox
+        input(type="checkbox" name="agree3" id="agree3")
+        label(for="agree3")
+          span Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
+          
+      .contact-form__cta
+        button(type="submit").btn.btn-red
+          span Отправить
+          
+    
+    
