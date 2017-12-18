@@ -190,6 +190,7 @@
 
 /* Shadow image
 .shadow-image
+  position: relative
   flex: 1 1 auto
   display: flex
   flex-direction: column
@@ -201,6 +202,12 @@
     max-width: 100%
     box-shadow: 24px 24px 0 #F7F7F7
     +tr
+  .btn
+    position: absolute
+    z-index: 2
+    bottom: 60px
+    left: 50%
+    transform: translateX(-50%)
 
   &--left
     padding-right: 0

@@ -29,10 +29,8 @@ PageList:
 - file: results-detail.html
   ready: 80
 - file: oborudovanie.html
-  ready: 5
+  ready: 80
 - file: oborudovanie-detail.html
-  ready: 5
+  ready: 80
 - file: experts.html
-  ready: 5
-- file: order.html
-  ready: 5
+  ready: 80
