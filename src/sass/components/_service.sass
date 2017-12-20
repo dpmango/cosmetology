@@ -55,17 +55,27 @@
     line-height: 1.5
     margin-top: 30px
     padding-left: 30%
+    .more-link
+      margin-top: 10px
 
 
 
 
 +r($wide)
   .service
+    &--reverse
+      .service
+        &__text
+          padding-right: 20%
     &__text
-      // padding-left: 10%
+      padding-left: 20%
 
 +r($desktop)
   .service
+    &--reverse
+      .service
+        &__text
+          padding-right: 15%
     &__title
       padding-top: 50px
       &::before
@@ -109,7 +119,7 @@
 
 /* service item
 .service-item
-  margin-bottom: 35px
+  margin-bottom: 40px
 
   &__description
     font-size: 16px
@@ -117,6 +127,7 @@
     color: $colorGray
   &__cta
     margin-top: 15px
+    .more-link
+      margin-top: 5px
 
 +r($tablet)
-  

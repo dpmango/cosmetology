@@ -223,8 +223,6 @@ $(document).ready(function(){
       var min = $(this).data('min') || "20px";
       var max = $(this).data('max') || "70px";
 
-      console.log(max)
-
       _this.fitText(1, {minFontSize: min, maxFontSize: max})
     })
 
@@ -277,15 +275,23 @@ $(document).ready(function(){
       adaptiveHeight: false,
       responsive: [
         {
+          breakpoint: 1200,
+          settings: {
+            arrows: false,
+          }
+        },
+        {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
+            arrows: false,
           }
         },
         {
           breakpoint: 568,
           settings: {
             slidesToShow: 1,
+            arrows: false,
           }
         },
       ]
@@ -304,6 +310,12 @@ $(document).ready(function(){
       accessibility: false,
       adaptiveHeight: false,
       responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            arrows: false
+          }
+        },
         {
           breakpoint: 568,
           settings: {
@@ -386,6 +398,11 @@ $(document).ready(function(){
       });
 
 
+  // testimonial TOGGLER
+  _document.on('click', '[js-testimonial-up]', function(){
+    $(this).toggleClass('is-active');
+    $(this).closest('.testimonial-item').find('.testimonial-item__text').slideToggle();
+  })
 
 
   //////////
@@ -416,6 +433,19 @@ $(document).ready(function(){
         }
       }
     });
+
+    $('[js-image-popup]').magnificPopup({
+      type: 'image',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'popup-buble'
+    });
+
 
     _document.on('click', '[js-popup-i-want]', function(){
       if ( _window.width() > bp.desktop ){
@@ -450,7 +480,10 @@ $(document).ready(function(){
 
 
     $('[js-popup-gallery]').magnificPopup({
-  		delegate: 'img',
+      // src: {
+      //   items: '.slick-slide:not(.slick-cloned) img'
+      // },
+  		delegate: '.slick-slide:not(.slick-cloned) img',
   		type: 'image',
   		tLoading: 'Загрузка #%curr%...',
   		mainClass: 'popup-buble',
@@ -468,66 +501,6 @@ $(document).ready(function(){
   ////////////
   // UI
   ////////////
-
-  // custom selects
-  // $('.ui-select__visible').on('click', function(e){
-  //   var that = this
-  //   // hide parents
-  //   $(this).parent().parent().parent().find('.ui-select__visible').each(function(i,val){
-  //     if ( !$(val).is($(that)) ){
-  //       $(val).parent().removeClass('active')
-  //     }
-  //   });
-  //
-  //   $(this).parent().toggleClass('active');
-  // });
-  //
-  // $('.ui-select__dropdown span').on('click', function(){
-  //   // parse value and toggle active
-  //   var value = $(this).data('val');
-  //   if (value){
-  //     $(this).siblings().removeClass('active');
-  //     $(this).addClass('active');
-  //
-  //     // set visible
-  //     $(this).closest('.ui-select').removeClass('active');
-  //     $(this).closest('.ui-select').find('input').val(value);
-  //
-  //     $(this).closest('.ui-select').find('.ui-select__visible span').text(value);
-  //   }
-  // });
-  //
-  // // handle outside click
-  // $(document).click(function (e) {
-  //   var container = new Array();
-  //   container.push($('.ui-select'));
-  //
-  //   $.each(container, function(key, value) {
-  //       if (!$(value).is(e.target) && $(value).has(e.target).length === 0) {
-  //           $(value).removeClass('active');
-  //       }
-  //   });
-  // });
-  //
-  // // numeric input
-  // _document.on('click', '.ui-number span', function(e){
-  //   var element = $(this).parent().find('input');
-  //   var currentValue = parseInt($(this).parent().find('input').val()) || 0;
-  //
-  //   if( $(this).data('action') == 'minus' ){
-  //     if(currentValue <= 1){
-  //       return false;
-  //     }else{
-  //       element.val( currentValue - 1 );
-  //     }
-  //   } else if( $(this).data('action') == 'plus' ){
-  //     if(currentValue >= 99){
-  //       return false;
-  //     } else{
-  //       element.val( currentValue + 1 );
-  //     }
-  //   }
-  // });
 
   // Masked input
   function initMasks(){

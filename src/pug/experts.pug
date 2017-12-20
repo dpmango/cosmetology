@@ -14,7 +14,7 @@ block content
     .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
       //slide
       .slider-slide
-        img.slider-slide-bg(img="img/sliderExperts.jpg" srcset="img/sliderExperts@2x.jpg 2x")
+        img.slider-slide-bg(src="img/sliderExperts.jpg" srcset="img/sliderExperts@2x.jpg 2x")
         .slider-slide__content
           .slider-slide__title Специалисты
           .breadcrumbs
@@ -22,7 +22,7 @@ block content
             span О нас
       //slide
       .slider-slide
-        img.slider-slide-bg(img="img/sliderExperts.jpg" srcset="img/sliderExperts@2x.jpg 2x")
+        img.slider-slide-bg(src="img/sliderExperts.jpg" srcset="img/sliderExperts@2x.jpg 2x")
         .slider-slide__content
           .slider-slide__title Специалисты
           .breadcrumbs
@@ -50,8 +50,8 @@ block content
               
         .service__col
           .shadow-image.shadow-image--left
-            img(src='img/expertsCat_1.jpg' srcset='img/expertsCat_1@2x.jpg')
-            a(href="#modalOrder" js-modal).btn.btn-red.btn-filled
+            img(alt="image name" src='img/expertsCat_1.jpg' srcset='img/expertsCat_1@2x.jpg')
+            a(href="#modalOrder" js-popup).btn.btn-red.btn-filled
               span Записаться
       // service
       .service.service--reverse.wow
@@ -65,8 +65,8 @@ block content
               
         .service__col
           .shadow-image
-            img(src='img/expertsCat_2.jpg' srcset='img/expertsCat_2@2x.jpg')
-            a(href="#modalOrder" js-modal).btn.btn-red.btn-filled
+            img(alt="image name" src='img/expertsCat_2.jpg' srcset='img/expertsCat_2@2x.jpg')
+            a(href="#modalOrder" js-popup).btn.btn-red.btn-filled
               span Записаться
       // title block
       .title.wow
@@ -85,8 +85,8 @@ block content
               
         .service__col
           .shadow-image.shadow-image--left
-            img(src='img/expertsCat_3.jpg' srcset='img/expertsCat_3@2x.jpg')
-            a(href="#modalOrder" js-modal).btn.btn-red.btn-filled
+            img(alt="image name" src='img/expertsCat_3.jpg' srcset='img/expertsCat_3@2x.jpg')
+            a(href="#modalOrder" js-popup).btn.btn-red.btn-filled
               span Записаться
               
       // service
@@ -101,6 +101,35 @@ block content
               
         .service__col
           .shadow-image
-            img(src='img/expertsCat_4.jpg' srcset='img/expertsCat_4@2x.jpg')
-            a(href="#modalOrder" js-modal).btn.btn-red.btn-filled
+            img(alt="image name" src='img/expertsCat_4.jpg' srcset='img/expertsCat_4@2x.jpg')
+            a(href="#modalOrder" js-popup).btn.btn-red.btn-filled
               span Записаться
+
+
+              
+  // ORDER
+  .popup-dialog.mfp-hide#modalOrder
+    .container
+      .text-title запись на прием
+      
+      form(action="" js-validate-contact).contact-form
+        .contact-form__top
+          .ui-group
+            input(type="text" name="name" placeholder="Имя")
+          .ui-group
+            input(type="email" name="email" placeholder="Email")
+          .ui-group
+            input(type="tel" name="phone" placeholder="Телефон")
+        
+        .ui-group
+          textarea(placeholder="Сообщение" name="text")
+        
+        .ui-checkbox
+          input(type="checkbox" name="agree3" id="agree3")
+          label(for="agree3")
+            span Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
+            
+        .contact-form__cta
+          button(type="submit").btn.btn-red
+            span Отправить
+            

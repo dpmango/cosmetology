@@ -70,6 +70,11 @@
     .slick-prev
       left: -35px
 
++r($wide)
+  .m-slick-arrows
+    .slick-next, .slick-prev
+      // display: none !important
+
 +r($tablet)
   .m-slick-arrows
     .slick-next, .slick-prev
@@ -106,7 +111,7 @@
 
 /* title
 .title
-  padding: 100px 0 60px 0
+  padding: 100px 0 50px 0
   text-align: center
   &__name
     position: relative
@@ -118,7 +123,7 @@
       display: inline-block
       content: ' '
       position: absolute
-      top: -80px
+      top: -70px
       left: 50%
       transform: translateX(-50%)
       height: 60px
@@ -312,9 +317,11 @@
       color: $colorGray
       font-family: 'Roboto Slab', sans-serif
     .text-title
-      margin-top: 30px
+      margin-top: 40px
       &:first-child
         margin-top: -0px
+    .slick-slider
+      margin-top: 30px
 
 +r($desktop)
   .p-row
@@ -447,8 +454,10 @@
       +tr
       &:last-child
         margin-right: 15px
-      &:hover
+      &:hover, &.is-active
         color: $fontColor
+      &.is-active
+        transform: rotate(180deg) translateY(2px)
   &__text
     margin: 30px 0 50px 0
     padding-left: 15px

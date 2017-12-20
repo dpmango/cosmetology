@@ -129,6 +129,12 @@
     height: 1px
     background: $fontColor
 
++r($wide)
+  .text-title
+    padding-bottom: 70px
+    &::after
+      bottom: 30px
+
 
 +r($tablet)
   .text-title
@@ -154,3 +160,16 @@
     margin-right: 30px
   &__cta
     flex: 0 0 auto
+
++r($tablet)
+  .price-row
+    padding: 15px 0
+    flex-direction: column
+    align-items: stretch
+    &__price
+      margin-left: 0
+      margin-right: auto
+      margin: 15px 0
+    &__cta
+      .btn
+        width: 100%

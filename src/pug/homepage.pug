@@ -6,7 +6,7 @@ extends shared/_layout
 block content
 
   // HERO SLIDER :: START
-  .hero
+  .hero.wow
     .container
       .scrolldown(js-scrolldown)
         include ../icons/scrollDown.svg
@@ -17,7 +17,7 @@ block content
         .container
           .hero-slide__wrapper
             .hero-slide__left
-              img.hero-slide-bg(src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
               .hero-slide__content
                 .hero-slide__title(js-fittext data-min="20px") Косметология
                 .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
@@ -25,13 +25,13 @@ block content
                   a(href="#").btn.btn-primary
                     span Подробнее
             .hero-slide__right
-              img(src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
+              img(alt="image name" src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
       //slide
       .hero-slide
         .container
           .hero-slide__wrapper
             .hero-slide__left
-              img.hero-slide-bg(src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
               .hero-slide__content
                 .hero-slide__title(js-fittext) Косметология
                 .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
@@ -39,13 +39,13 @@ block content
                   a(href="#").btn.btn-primary
                     span Подробнее
             .hero-slide__right
-              img(src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
+              img(alt="image name" src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
       //slide
       .hero-slide
         .container
           .hero-slide__wrapper
             .hero-slide__left
-              img.hero-slide-bg(src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
               .hero-slide__content
                 .hero-slide__title(js-fittext) Косметология
                 .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
@@ -53,19 +53,19 @@ block content
                   a(href="#").btn.btn-primary
                     span Подробнее
             .hero-slide__right
-              img(src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
+              img(alt="image name" src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
   
   
   // ABOUT :: START
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name о нас
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
       // slider
-      .equal-slider.m-slick-arrows(js-slider data-slick-arrows)
+      .equal-slider.wow.m-slick-dots.m-slick-arrows(js-slider data-slick-arrows data-slick-dots)
         //slide
         .equal-slide
           .equal-slide__wrapper
@@ -78,7 +78,7 @@ block content
                 span Подробнее
             .equal-slide__right
               a(href="#").shadow-image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
       
         //slide
         .equal-slide
@@ -92,7 +92,7 @@ block content
                 span Подробнее
             .equal-slide__right
               a(href="#").shadow-image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
         
         //slide
         .equal-slide
@@ -106,14 +106,14 @@ block content
                 span Подробнее
             .equal-slide__right
               a(href="#").shadow-image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
 
 
   // SERVICES :: START
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name услуги
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
@@ -130,7 +130,7 @@ block content
               
         .service__col
           a(href="#").shadow-image.shadow-image--left
-            img(src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+            img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
     
     .container.container--wide
       // service
@@ -146,7 +146,7 @@ block content
               
         .service__col
           a(href="#").shadow-image
-            img(src='img/serviceCat_2.jpg' srcset='img/serviceCat_2@2x.jpg')
+            img(alt="image name" src='img/serviceCat_2.jpg' srcset='img/serviceCat_2@2x.jpg')
     
     .container
       // service
@@ -162,7 +162,7 @@ block content
               
         .service__col
           a(href="#").shadow-image.shadow-image--left
-            img(src='img/serviceCat_3.jpg' srcset='img/serviceCat_3@2x.jpg')
+            img(alt="image name" src='img/serviceCat_3.jpg' srcset='img/serviceCat_3@2x.jpg')
     
       // service
       .service.service--reverse.wow
@@ -177,18 +177,18 @@ block content
               
         .service__col
           a(href="#").shadow-image
-            img(src='img/serviceCat_4.jpg' srcset='img/serviceCat_4@2x.jpg')
+            img(alt="image name" src='img/serviceCat_4.jpg' srcset='img/serviceCat_4@2x.jpg')
 
   // SECTION
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name я хочу
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
       // CTA FORM
-      form(action="#").cta-form
+      form(action="#").cta-form.wow
         .cta-form__options
           .ui-checkbox
             input(type="checkbox" id="cta_opt1" name="cta_opt")
@@ -212,15 +212,15 @@ block content
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name специалисты
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
-      .experts-slider(js-slider-col-3).m-slick-arrows.m-slick-dots
+      .experts-slider.wow(js-slider-col-3).m-slick-arrows.m-slick-dots
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
+            img(alt="image name" src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -229,7 +229,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+            img(alt="image name" src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -238,7 +238,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
+            img(alt="image name" src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -247,7 +247,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+            img(alt="image name" src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -258,13 +258,13 @@ block content
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name мы в соцсетях
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
       
       // socials
-      .socials
+      .socials.wow
         .socials__wrapper
           // col
           .socials__col
@@ -274,7 +274,7 @@ block content
               a(href="#").socials__link /name
               
             a(href="#").socials__grid
-              img(src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
+              img(alt="image name" src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
           
           // col  
           .socials__col
@@ -283,7 +283,7 @@ block content
                 +icon('ico-social-vk')
               a(href="#").socials__link /name
             a(href="#").socials__grid
-              img(src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
+              img(alt="image name" src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
 
           // col
           .socials__col
@@ -292,7 +292,7 @@ block content
                 +icon('ico-social-instagram')
               a(href="#").socials__link /name
             a(href="#").socials__grid
-              img(src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
+              img(alt="image name" src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
           
           
                 
@@ -300,11 +300,11 @@ block content
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name Фото
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
-      .slide-tabs(js-checkbox-tabs)
+      .slide-tabs.wow(js-checkbox-tabs)
         .ui-checkbox
           input(type="checkbox" id="photo_opt1" name="photo_opt" data-tab-for="photo-1" checked)
           label(for="photo_opt1")
@@ -320,35 +320,35 @@ block content
       
       //slide tab
       .slide-tab(data-tab="photo-1").is-active
-        .slide-tab__heading косметология
+        .slide-tab__heading.wow косметология
       
-        .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
+        .photo-slider.wow(js-slider-col-2).m-slick-dots.m-slick-arrows
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_1.jpg' srcset='img/photoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_2.jpg' srcset='img/photoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
           
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_1.jpg' srcset='img/photoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
     
       //slide tab
@@ -360,30 +360,30 @@ block content
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_1.jpg' srcset='img/photoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_2.jpg' srcset='img/photoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
           
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_1.jpg' srcset='img/photoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
-
+  
       //slide tab
       .slide-tab(data-tab="photo-3")
         .slide-tab__heading Эстетическая хирургия
@@ -393,42 +393,42 @@ block content
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_1.jpg' srcset='img/photoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_2.jpg' srcset='img/photoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
           
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/photoSlide_1.jpg' srcset='img/photoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
-      
+  
               
             
   // VIDEO :: START
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name ВИДЕО
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
       //slide tabs
-      .slide-tabs(js-checkbox-tabs)
+      .slide-tabs.wow(js-checkbox-tabs)
         .ui-checkbox
           input(type="checkbox" id="video_opt1" name="video_opt" data-tab-for="video-1")
           label(for="video_opt1")
@@ -443,7 +443,7 @@ block content
             span Эстетическая хирургия
       
       //slide tab
-      .slide-tab(data-tab="video-1")
+      .slide-tab.wow(data-tab="video-1")
         .slide-tab__heading косметология
       
         .photo-slider(js-slider-col-2).m-slick-dots.m-slick-arrows
@@ -451,28 +451,28 @@ block content
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_1.jpg' srcset='img/videoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_2.jpg' srcset='img/videoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
           
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_1.jpg' srcset='img/videoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_2.jpg' srcset='img/videoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
     
       //slide tab
@@ -484,30 +484,30 @@ block content
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_1.jpg' srcset='img/videoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_2.jpg' srcset='img/videoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
           
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_1.jpg' srcset='img/videoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_2.jpg' srcset='img/videoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
-
+    
       //slide tab
       .slide-tab(data-tab="video-3")
         .slide-tab__heading Эстетическая хирургия
@@ -517,30 +517,30 @@ block content
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_1.jpg' srcset='img/videoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_2.jpg' srcset='img/videoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
           
           //slide 
           .photo-slide.photo-slide--left
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_1.jpg' srcset='img/videoSlide_1@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
             
           // slide
           .photo-slide.photo-slide--right
             .photo-slide__content
               a(href="#").photo-slide__image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/videoSlide_2.jpg' srcset='img/videoSlide_2@2x.jpg')
               a(href="#").photo-slide__name формирование кубиков на животе. создание атлетического тела
-      
+    
               
                     
   // NEWS :: START
@@ -556,7 +556,7 @@ block content
         // slide
         .news-slide
           a(href="#").news-slide__image
-            img(src='img/newsSlide1.jpg' srcset='img/newsSlide1@2x.jpg 2x')
+            img(alt="image name" src='img/newsSlide1.jpg' srcset='img/newsSlide1@2x.jpg 2x')
           .news-slide__content
             .news-slide__date 17.09.2017
             a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
@@ -564,7 +564,7 @@ block content
         // slide
         .news-slide
           a(href="#").news-slide__image
-            img(src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
+            img(alt="image name" src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
           .news-slide__content
             .news-slide__date 17.09.2017
             a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
@@ -572,7 +572,7 @@ block content
         // slide
         .news-slide
           a(href="#").news-slide__image
-            img(src='img/newsSlide3.jpg' srcset='img/newsSlide3@2x.jpg 2x')
+            img(alt="image name" src='img/newsSlide3.jpg' srcset='img/newsSlide3@2x.jpg 2x')
           .news-slide__content
             .news-slide__date 17.09.2017
             a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
@@ -580,7 +580,7 @@ block content
         // slide
         .news-slide
           a(href="#").news-slide__image
-            img(src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
+            img(alt="image name" src='img/newsSlide2.jpg' srcset='img/newsSlide2@2x.jpg 2x')
           .news-slide__content
             .news-slide__date 17.09.2017
             a(href="#").news-slide__name Мужчины проходят через накачку губ, чтобы походить на звезд
@@ -590,13 +590,13 @@ block content
   .section
     .container
       // title block
-      .title
+      .title.wow
         .title__name как нас найти
         .title__description Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.
       
 
       // contact
-      .contact
+      .contact.wow
         .contact__wrapper
           .contact__col
             .contact__head Адрес
@@ -632,7 +632,7 @@ block content
                   +icon('ico-social-vk')
         
     // map
-    .contact-map
+    .contact-map.wow
       #contact-map  
 
 

@@ -1,6 +1,7 @@
 .hero
   position: relative
   padding-top: 115px
+  margin-bottom: 10px
   &::after
     display: inline-block
     content: ' '
@@ -58,6 +59,11 @@
   right: 0
   left: 0
   z-index: 2
+
++r($desktop)
+  .hero
+    .scrolldown
+      left: 22px
 
 +r(600)
   .hero
@@ -223,7 +229,7 @@
 +r(600)
   .slider
     top: 80px
-    
+
 .slider-slide
   position: relative
   min-height: 500px

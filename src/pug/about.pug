@@ -6,7 +6,7 @@ extends shared/_layout
 block content
 
   // HERO SLIDER :: START
-  .hero.hero--inner
+  .hero.hero--inner.wow
     .container
       .scrolldown(js-scrolldown data-animation-delay=".3s").wow
         include ../icons/scrollDown.svg
@@ -14,7 +14,7 @@ block content
     .slider.wow(js-slider data-slick-dots data-slick-arrows).m-slick-dots.m-slick-arrows.m-abs-controls
       //slide
       .slider-slide
-        img.slider-slide-bg(img="img/sliderInner.jpg" srcset="img/sliderInner@2x.jpg 2x")
+        img.slider-slide-bg(src="img/sliderAbout.jpg" srcset="img/sliderAbout@2x.jpg 2x")
         .slider-slide__content
           .slider-slide__title заголовок раздела
           .breadcrumbs
@@ -22,7 +22,7 @@ block content
             span О нас
       //slide
       .slider-slide
-        img.slider-slide-bg(img="img/sliderInner.jpg" srcset="img/sliderInner@2x.jpg 2x")
+        img.slider-slide-bg(src="img/sliderAbout.jpg" srcset="img/sliderAbout@2x.jpg 2x")
         .slider-slide__content
           .slider-slide__title заголовок раздела
           .breadcrumbs
@@ -86,7 +86,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
+            img(alt="image name" src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -95,7 +95,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+            img(alt="image name" src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -104,7 +104,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
+            img(alt="image name" src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -113,7 +113,7 @@ block content
         // expert
         .expert-slide
           .expert-slide__image
-            img(src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
+            img(alt="image name" src='img/expert2.jpg' srcset='img/expert2@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
@@ -143,7 +143,7 @@ block content
                 span Подробнее
             .equal-slide__right
               a(href="#").shadow-image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
       
         //slide
         .equal-slide
@@ -157,7 +157,7 @@ block content
                 span Подробнее
             .equal-slide__right
               a(href="#").shadow-image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
         
         //slide
         .equal-slide
@@ -171,7 +171,7 @@ block content
                 span Подробнее
             .equal-slide__right
               a(href="#").shadow-image
-                img(src='placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
+                img(alt="image name" src='img/placeholderImage_1.jpg' srcset='img/placeholderImage_1@2x.jpg')
 
 
   // SECTIONS
@@ -184,13 +184,13 @@ block content
       
       .licence-slider.wow(js-slider-col-3 js-popup-gallery).m-slick-dots.m-slick-arrows
         .licence-slide
-          img(href='img/licence1.jpg' src='img/licence1.jpg' srcset='img/licence1@2x.jpg 2x')
+          img(href='img/licence1.jpg' alt="image name" src='img/licence1.jpg' srcset='img/licence1@2x.jpg 2x')
         .licence-slide
-          img(href='img/licence2.jpg' src='img/licence2.jpg' srcset='img/licence2@2x.jpg 2x')
+          img(href='img/licence2.jpg' alt="image name" src='img/licence2.jpg' srcset='img/licence2@2x.jpg 2x')
         .licence-slide
-          img(href='img/licence3.jpg' src='img/licence3.jpg' srcset='img/licence3@2x.jpg 2x')
+          img(href='img/licence3.jpg' alt="image name" src='img/licence3.jpg' srcset='img/licence3@2x.jpg 2x')
         .licence-slide
-          img(href='img/licence2.jpg' src='img/licence2.jpg' srcset='img/licence2@2x.jpg 2x')  
+          img(href='img/licence2.jpg' alt="image name" src='img/licence2.jpg' srcset='img/licence2@2x.jpg 2x')  
   
   // JOBS
   .section
