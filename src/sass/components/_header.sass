@@ -204,17 +204,40 @@
   right: 0
   bottom: 0
   z-index: 9
-  background: white
   border-top: 1px solid $borderColor
   opacity: 0
   pointer-events: none
-  transform: translate3d(0,100%,0)
-  +tr
+  &::before, &::after
+    display: inline-block
+    content: ' '
+    background: rgba(white, .95)
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 0vw
+    pointer-events: none
+    +tr
+  &::before
+    left: 50%
+
+  &::after
+    right: 50%
+
   &.is-active
     opacity: 1
-    transform: translate3d(0,0,0)
     pointer-events: all
+    &::before
+      left: 0
+      width: 50vw
+    &::after
+      right: 0
+      width: 50vw
+    .mobile-navi__menu
+      opacity: 1
+
   &__menu
+    position: relative
+    z-index: 2
     flex: 1 1 auto
     display: flex
     flex-direction: column
@@ -224,6 +247,8 @@
     margin: 0 auto
     width: 100%
     max-width: 300px
+    opacity: 0
+    transition: all .3s .5s ease
     > li
       position: relative
       flex: 1 0 auto

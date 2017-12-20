@@ -437,14 +437,28 @@ $(document).ready(function(){
     $('[js-image-popup]').magnificPopup({
       type: 'image',
       fixedContentPos: true,
+      closeOnContentClick: true,
       fixedBgPos: true,
       overflowY: 'auto',
-      closeBtnInside: true,
+      closeBtnInside: false,
       preloader: false,
       midClick: true,
       removalDelay: 300,
-      mainClass: 'popup-buble'
+      mainClass: 'popup-buble mfp-with-zoom',
+      zoom: {
+  			enabled: true,
+  			duration: 300 // don't foget to change the duration also in CSS
+  		}
     });
+
+    $('[js-video-popup]').magnificPopup({
+  		disableOn: 700,
+  		type: 'iframe',
+  		mainClass: 'popup-buble mfp-with-zoom',
+  		removalDelay: 160,
+  		preloader: false,
+  		fixedContentPos: false
+  	});
 
 
     _document.on('click', '[js-popup-i-want]', function(){
