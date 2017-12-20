@@ -4,10 +4,22 @@
   left: 0
   right: 0
   z-index: 10
+  transition: transform .15s ease
 
   &.is-menu-opened
     background: white
     position: fixed
+
+  &--transformed
+    background: white
+    transform: translate3d(0,-100%,0)
+    .header__wrapper
+      padding: 15px 0
+
+  &--fixed
+    position: fixed
+    transform: translate3d(0,0,0)
+    box-shadow: 0 4px 8px rgba(black, .1)
 
   &__wrapper
     display: flex

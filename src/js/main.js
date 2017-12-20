@@ -157,7 +157,7 @@ $(document).ready(function(){
       var vScroll = _window.scrollTop();
       var header = $('.header').not('.header--static');
       var headerHeight = header.height();
-      var heroHeight = $('.hero').outerHeight() - headerHeight;
+      var heroHeight = $('.page__content').children().first().outerHeight() - headerHeight;
 
       if ( vScroll > headerHeight ){
         header.addClass('header--transformed');
