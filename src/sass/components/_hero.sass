@@ -2,6 +2,10 @@
   position: relative
   padding-top: 115px
   margin-bottom: 10px
+  &:not(.hero--inner)
+    // min-height: 500px
+    // height: calc(100vh + 115px)
+    // max-height: 800px
   &::after
     display: inline-block
     content: ' '
@@ -101,17 +105,21 @@
     background: white
     padding: 25px
     img
-      max-width: 100%
+      width: 100%
   &-bg
     position: absolute
-    top: 50%
-    left: 50%
     z-index: 1
-    transform: translate(-50%,-50%)
-    min-width: 100%
-    min-height: 100%
-    width: auto
-    height: auto
+    object-fit: cover
+    width: 100%
+    height: 100%
+    // top: 50%
+    // left: 50%
+    // z-index: 1
+    // transform: translate(-50%,-50%)
+    // min-width: 100%
+    // min-height: 100%
+    // width: auto
+    // height: auto
 
   &__content
     flex: 1 1 auto

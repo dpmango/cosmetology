@@ -14,10 +14,14 @@ block content
     .hero-slider(js-slider data-slick-dots).m-slick-dots
       //slide
       .hero-slide
-        .container
+        .container.container--hero
           .hero-slide__wrapper
             .hero-slide__left
-              img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
+              video.hero-slide-bg(width='100%' height='100%' autoplay loop mute poster='video/test.jpg')
+                source(src='video/test.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+                source(src='video/test.webm' type='video/webm; codecs="vp8, vorbis"')
+
+              // img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
               .hero-slide__content
                 .hero-slide__title(js-fittext data-min="20px") Косметология
                 .hero-slide__text Косметология – направление эстетической медицины, занимающееся изучением проблем внешности человека, их этиологии, проявлений, а также разработкой и применением средств и методов коррекции внешнего вида.
@@ -28,7 +32,7 @@ block content
               img(alt="image name" src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
       //slide
       .hero-slide
-        .container
+        .container.container--hero
           .hero-slide__wrapper
             .hero-slide__left
               img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
@@ -42,7 +46,7 @@ block content
               img(alt="image name" src='img/heroSlideRightBg.jpg' srcset='img/heroSlideRightBg@2x.jpg 2x')
       //slide
       .hero-slide
-        .container
+        .container.container--hero
           .hero-slide__wrapper
             .hero-slide__left
               img.hero-slide-bg(alt="image name" src='img/heroSlideBg.jpg' srcset='img/heroSlideBg@2x.jpg')
@@ -87,6 +91,7 @@ block content
               .equal-slide__title 5 причин <br> выбрать нас
               .equal-slide__text 
                 p Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+                p It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.
                 p It suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.
               a(href="#").more-link
                 span Подробнее
@@ -219,12 +224,12 @@ block content
       .experts-slider.wow(js-slider-col-3).m-slick-arrows.m-slick-dots
         // expert
         .expert-slide
-          .expert-slide__image
+          a(href="#").expert-slide__image
             img(alt="image name" src='img/expert1.jpg' srcset='img/expert1@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
-            a(href="#").btn.btn-red.btn--block
+            a(href="#modalOrder" js-popup).btn.btn-red.btn--block
               span Записаться
         // expert
         .expert-slide
@@ -233,16 +238,16 @@ block content
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
-            a(href="#").btn.btn-red.btn--block
+            a(href="#modalOrder" js-popup).btn.btn-red.btn--block
               span Записаться
         // expert
         .expert-slide
-          .expert-slide__image
+          a(href="#").expert-slide__image
             img(alt="image name" src='img/expert3.jpg' srcset='img/expert3@2x.jpg')
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
-            a(href="#").btn.btn-red.btn--block
+            a(href="#modalOrder" js-popup).btn.btn-red.btn--block
               span Записаться
         // expert
         .expert-slide
@@ -251,7 +256,7 @@ block content
           .expert-slide__name иванова наталья
           .expert-slide__position врач-косметолог
           .expert-slide__cta
-            a(href="#").btn.btn-red.btn--block
+            a(href="#modalOrder" js-popup).btn.btn-red.btn--block
               span Записаться
 
   // SOCIALS :: START
@@ -273,29 +278,46 @@ block content
                 +icon('ico-social-facebook')
               a(href="#").socials__link /name
               
-            a(href="#").socials__grid
-              img(alt="image name" src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
-          
+            .socials__grid
+              a(href="#")
+                img(alt="image name" src='img/socialImg_1.jpg' srcset='img/socialImg_1@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_2.jpg' srcset='img/socialImg_2@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_3.jpg' srcset='img/socialImg_3@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_4.jpg' srcset='img/socialImg_4@2x.jpg 2x')
           // col  
           .socials__col
             .socials__head
               a(href="#").social.social--vk
                 +icon('ico-social-vk')
               a(href="#").socials__link /name
-            a(href="#").socials__grid
-              img(alt="image name" src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
-
+            .socials__grid
+              a(href="#")
+                img(alt="image name" src='img/socialImg_1.jpg' srcset='img/socialImg_1@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_2.jpg' srcset='img/socialImg_2@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_3.jpg' srcset='img/socialImg_3@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_4.jpg' srcset='img/socialImg_4@2x.jpg 2x')
           // col
           .socials__col
             .socials__head
               a(href="#").social.social--instagram
                 +icon('ico-social-instagram')
               a(href="#").socials__link /name
-            a(href="#").socials__grid
-              img(alt="image name" src='img/socialImg.jpg' srcset='img/socialImg@2x.jpg 2x')
-          
-          
-                
+            .socials__grid
+              a(href="#")
+                img(alt="image name" src='img/socialImg_1.jpg' srcset='img/socialImg_1@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_2.jpg' srcset='img/socialImg_2@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_3.jpg' srcset='img/socialImg_3@2x.jpg 2x')
+              a(href="#")
+                img(alt="image name" src='img/socialImg_4.jpg' srcset='img/socialImg_4@2x.jpg 2x')
+                  
   // PHOTO :: START
   .section
     .container
@@ -637,3 +659,4 @@ block content
 
 
   include components/_how-to-get
+  include components/_modals

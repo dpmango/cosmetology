@@ -1,25 +1,28 @@
 // HEADER
 .header
-  position: absolute
+  position: fixed
   left: 0
   right: 0
   z-index: 10
-  transition: transform .15s ease
+  transition: all .15s ease
 
   &.is-menu-opened
     background: white
     position: fixed
 
-  &--transformed
-    background: white
-    transform: translate3d(0,-100%,0)
-    .header__wrapper
-      padding: 15px 0
+  // &--transformed
+  //   background: white
+  //   transform: translate3d(0,-100%,0)
+  //   .header__wrapper
+  //     padding: 15px 0
 
   &--fixed
-    position: fixed
-    transform: translate3d(0,0,0)
+    background: white
+    // transform: translate3d(0,-100%,0)
+    // position: fixed
     box-shadow: 0 4px 8px rgba(black, .1)
+    // .header__wrapper
+    //   padding: 15px 0
 
   &__wrapper
     display: flex
@@ -57,29 +60,29 @@
       > a
         position: relative
         display: inline-block
-        padding: 5px
+        padding: 15px 5px
         +tr
         &::after
           display: inline-block
           content: ' '
           position: absolute
-          bottom: -10px
+          bottom: 0px
           left: 0
           right: 0
-          height: 4px
+          height: 1px
           background: $colorRed
           opacity: 0
           pointer-events: none
           transform: translate(0,5px)
           +tr
 
-      &.is-active, &:hover
+      &.is-active
         > a
           color: $colorRed
           &::after
             opacity: 1
             transform: translate(0,0)
-      &:hover
+
         .header__menu-sub
           opacity: 1
           transform: translate3d(0,0,0)
@@ -88,10 +91,10 @@
     &-sub
       list-style: none
       margin: 0
-      padding: 15px 25px
+      padding: 15px 25px 15px 40px
       position: absolute
       left: 0
-      top: 48px
+      top: 44px
       z-index: 5
       background: #FFFFFF
       border: 1px solid #000000
@@ -99,13 +102,27 @@
       transform: translate3d(0,20px,0)
       pointer-events: none
       +tr
+      &::before
+        display: inline-block
+        content: ' '
+        position: absolute
+        top: 27px
+        left: 20px
+        bottom: 25px
+        width: 1px
+        background: $fontColor
       li
+        display: block
         font-size: 13px
         a
           display: inline-block
           white-space: nowrap
           padding: 12px 0
           color: $colorGray
+          +tr
+          &:hover
+            color: $colorRed
+
       &:hover
         opacity: 1
         transform: translate3d(0,0,0)

@@ -6,6 +6,11 @@ gulp.task('copy:fonts', function() {
     .src(config.src.fonts + '/*.{ttf,eot,woff,woff2}')
     .pipe(gulp.dest(config.dest.fonts));
 });
+gulp.task('copy:video', function() {
+  return gulp
+    .src(config.src.video + '/*.*')
+    .pipe(gulp.dest(config.dest.video));
+});
 
 gulp.task('copy:vendor', function() {
   return gulp
@@ -21,6 +26,7 @@ gulp.task('copy:rootfiles', function() {
 
 gulp.task('copy', [
   // 'copy:rootfiles',
+  'copy:video',
   'copy:vendor',
   'copy:fonts'
 ]);

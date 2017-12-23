@@ -28,15 +28,20 @@
       color: $colorRed
 
   &__grid
-    display: inline-block
+    display: flex
+    font-size: 0
+    flex-wrap: wrap
     margin-top: 30px
-    +tr
     img
       width: 100%
       max-width: 100%
-
-    &:hover
-      opacity: .7
+    a
+      flex: 0 1 50%
+      display: inline-block
+      overflow: hidden
+      +tr
+      &:hover
+        opacity: .7
 
 .social
   display: flex

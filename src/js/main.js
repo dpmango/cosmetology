@@ -79,7 +79,7 @@ $(document).ready(function(){
     updateHeaderActiveClass();
     initMasks();
     initFitText();
-    runScrollMonitor();
+    // runScrollMonitor();
 
     revealFooter();
     _window.on('resize', throttle(revealFooter, 100));
@@ -157,19 +157,13 @@ $(document).ready(function(){
       var vScroll = _window.scrollTop();
       var header = $('.header').not('.header--static');
       var headerHeight = header.height();
-      var heroHeight = $('.page__content').children().first().outerHeight() - headerHeight;
 
-      if ( vScroll > headerHeight ){
-        header.addClass('header--transformed');
-      } else {
-        header.removeClass('header--transformed');
-      }
-
-      if ( vScroll > heroHeight ){
+      if ( vScroll > 0 ){
         header.addClass('header--fixed');
       } else {
         header.removeClass('header--fixed');
       }
+
     }, 10));
   }
 
@@ -189,6 +183,16 @@ $(document).ready(function(){
   }
   // MOBILE NAVI
   _document
+    .on('mouseover', '[js-header-menu] li', function(e){
+      if ( $(this).has('ul') ){
+        $(this).addClass('is-active').siblings().removeClass('is-active')
+      }
+    })
+    .on('mouseout', '[js-header-menu] li', function(e){
+      if ( $(this).has('ul') ){
+        $(this).removeClass('is-active').siblings().removeClass('is-active')
+      }
+    })
     .on('click', '[js-mobile-nav] > li', function(){
       var hasUl = $(this).has('ul').length > 0
 
@@ -252,7 +256,7 @@ $(document).ready(function(){
           speed: 300,
           slidesToShow: 1,
           accessibility: false,
-          adaptiveHeight: false,
+          adaptiveHeight: true,
           draggable: self.data('slick-no-controls') !== undefined ? false : true,
           swipe: self.data('slick-no-controls') !== undefined ? false : true,
           swipeToSlide: self.data('slick-no-controls') !== undefined ? false : true,
@@ -272,7 +276,7 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 3,
       accessibility: false,
-      adaptiveHeight: false,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 1200,
@@ -308,7 +312,7 @@ $(document).ready(function(){
       slidesToShow: 2,
       slidesToScroll: 2,
       accessibility: false,
-      adaptiveHeight: false,
+      adaptiveHeight: true,
       responsive: [
         {
           breakpoint: 1200,

@@ -107,29 +107,4 @@ block content
 
 
               
-  // ORDER
-  .popup-dialog.mfp-hide#modalOrder
-    .container
-      .text-title запись на прием
-      
-      form(action="" js-validate-contact).contact-form
-        .contact-form__top
-          .ui-group
-            input(type="text" name="name" placeholder="Имя")
-          .ui-group
-            input(type="email" name="email" placeholder="Email")
-          .ui-group
-            input(type="tel" name="phone" placeholder="Телефон")
-        
-        .ui-group
-          textarea(placeholder="Сообщение" name="text")
-        
-        .ui-checkbox
-          input(type="checkbox" name="agree3" id="agree3")
-          label(for="agree3")
-            span Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
-            
-        .contact-form__cta
-          button(type="submit").btn.btn-red
-            span Отправить
-            
+  include components/_modals
