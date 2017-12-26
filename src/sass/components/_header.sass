@@ -228,12 +228,12 @@
     display: inline-block
     content: ' '
     background: rgba(white, .95)
-    position: absolute
+    position: fixed
     top: 0
-    bottom: 0
+    height: 100vh
     width: 0vw
     pointer-events: none
-    +tr
+    transition: all .25s ease-out
   &::before
     left: 50%
 
@@ -255,7 +255,7 @@
   &__menu
     position: relative
     z-index: 2
-    flex: 1 1 auto
+    flex: 1 0 auto
     display: flex
     flex-direction: column
     align-items: stretch

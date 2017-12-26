@@ -4,8 +4,13 @@
     // margin: 0 -15px
   .slick-track
     padding-top: 24px
+    display: flex !important
+    align-items: stretch
 
 .expert-slide
+  display: flex !important
+  flex-direction: column
+  height: auto !important
   text-align: center
   padding: 0 15px
   background: $grayBg
@@ -21,8 +26,6 @@
       +tr
       &:hover
         opacity: .7
-
-
   &__name
     margin-top: 30px
     +history
@@ -34,7 +37,8 @@
     font-size: 16px
 
   &__cta
-    margin-top: 20px
+    padding-top: 20px
+    margin-top: auto
     .btn
       max-width: 270px
       margin-left: auto

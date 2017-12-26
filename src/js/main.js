@@ -198,8 +198,10 @@ $(document).ready(function(){
 
       if ( hasUl ){
         $(this).toggleClass('is-opened');
-        $(this).find('ul').slideToggle()
+        $(this).find('ul').slideToggle();
 
+        $(this).siblings().removeClass('is-opened');
+        $(this).siblings().find('ul').slideUp();
       }
     })
     .on('click', '[js-mobile-nav] > li > ul', function(e){
@@ -329,6 +331,48 @@ $(document).ready(function(){
       ]
     })
 
+
+    var _socialsSlickMobile = $('.socials__wrapper');
+    var socialsSlickMobileOptions = {
+      mobileFirst: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 0,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 568,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+
+        },
+        {
+          breakpoint: 992,
+          settings: "unslick"
+        }
+
+      ]
+    }
+    _socialsSlickMobile.slick(socialsSlickMobileOptions);
+
+    _window.on('resize', debounce(function(e){
+      if ( _window.width() > 992 ) {
+        if (_socialsSlickMobile.hasClass('slick-initialized')) {
+          _socialsSlickMobile.slick('unslick');
+        }
+        return
+      }
+      if (!_socialsSlickMobile.hasClass('slick-initialized')) {
+        return _socialsSlickMobile.slick(socialsSlickMobileOptions);
+      }
+    }, 300));
+
   }
 
   //////////
@@ -342,11 +386,12 @@ $(document).ready(function(){
     tabTarget.addClass('is-active').siblings().removeClass('is-active');
     $(this).parent().siblings().find('input').prop('checked', false)
 
-    if ( tabTarget.find('.slick-slider').length > 0 ){
+    if ( tabTarget.find('.photo-slider').length > 0 ){
       setTimeout(function() {
-        tabTarget.find('.slick-slider').resize();
-        // _window.trigger('resize')
-      }, 200)
+        tabTarget.find('.photo-slider').resize();
+        _window.trigger('resize');
+
+      }, 300)
     }
     // e.preventDefault();
   })

@@ -284,10 +284,17 @@
 
 /* slide tab
 .slide-tab
-  padding-top: 30px
-  display: none
+  // padding-top: 30px
+  // display: none
+  height: 0
+  overflow: hidden
+  opacity: 0
+  +tr
   &.is-active
+    padding-top: 30px
     display: block
+    height: auto
+    opacity: 1
   &__heading
     margin-bottom: 40px
     text-align: center

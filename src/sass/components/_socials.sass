@@ -2,6 +2,11 @@
 .socials
   &__wrapper
     display: flex
+    .slick-dots
+      position: absolute
+      bottom: -50px
+      left: 0
+      right: 0
 
   &__col
     flex: 0 1 33.3%
@@ -94,16 +99,17 @@
 
 +r($desktop)
   .socials
+    margin-bottom: 50px
     &__col
       flex: 0 1 50%
       width: 50%
-      &:nth-child(3)
-        display: none
+      // &:nth-child(3)
+      //   display: none
 
 +r($tablet)
   .socials
     &__col
       flex: 0 0 auto
       width: 100%
-      &:nth-child(2)
-        display: none
+      // &:nth-child(2)
+      //   display: none

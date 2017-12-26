@@ -4,8 +4,12 @@
     .slick-track
       // padding-top: 24px
       margin: 0 -15px
+      display: flex !important
 
 .photo-slide
+  display: flex !important
+  flex-direction: column
+  height: auto !important
   position: relative
   padding: 0 15px 40px 15px
   width: 100%
@@ -52,3 +56,8 @@
     text-decoration: underline
     &:hover
       text-decoration: none
+
++r($tablet)
+  .photo-slide
+    &__name
+      font-size: 16px
