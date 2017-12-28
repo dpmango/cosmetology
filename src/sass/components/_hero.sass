@@ -27,7 +27,7 @@
   .scrolldown
     position: absolute
     bottom: 0
-    left: 36px
+    left: 37px
     z-index: 3
     cursor: pointer
     .vert
@@ -50,9 +50,10 @@
       max-height: 800px
     .scrolldown
       bottom: 4vh
-      svg g
+      .vert
         fill: white
-      svg circle
+      .oval
+        fill: white
         stroke: white
 
 @keyframes scrollDown
@@ -264,15 +265,15 @@
 
 /* SLIDER
 .slider
-  position: absolute
-  top: 115px
+  position: relative
+  // top: 115px
   left: 0
   right: 0
   z-index: 2
 
 +r(600)
   .slider
-    top: 80px
+    // top: 80px
 
 .slider-slide
   position: relative
