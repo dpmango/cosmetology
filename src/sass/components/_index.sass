@@ -75,6 +75,11 @@
     .slick-next, .slick-prev
       // display: none !important
 
++r($desktop)
+  .equal-slider.m-slick-arrows
+    .slick-next, .slick-prev
+      display: none !important
+
 +r($tablet)
   .m-slick-arrows
     .slick-next, .slick-prev
@@ -287,7 +292,7 @@
   // padding-top: 30px
   // display: none
   height: 0
-  overflow: hidden
+  // overflow: hidden
   opacity: 0
   +tr
   &.is-active

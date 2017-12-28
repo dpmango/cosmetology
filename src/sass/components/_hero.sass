@@ -64,8 +64,15 @@
   left: 0
   z-index: 2
 
++r($wide)
+  .hero
+    &::after
+      width: 70%
+
 +r($desktop)
   .hero
+    &::after
+      width: 61%
     .scrolldown
       left: 22px
 
@@ -88,6 +95,7 @@
     position: relative
     overflow: hidden
     flex: 0 1 ((9/12) * 100%)
+    width: 100%
     display: flex
     flex-direction: column
     min-height: 500px
@@ -108,6 +116,8 @@
       width: 100%
   &-bg
     position: absolute
+    top: 0
+    left: 0
     z-index: 1
     object-fit: cover
     width: 100%
@@ -214,8 +224,8 @@
       display: none
 
   .hero-slide
-    margin-left: -15px
-    margin-right: -15px
+    margin-left: -16px
+    margin-right: -16px
     &__left
       padding: 40px 20px 50px 30px
     &__right
