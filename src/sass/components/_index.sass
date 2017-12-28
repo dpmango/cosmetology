@@ -38,6 +38,12 @@
           background: $colorRed
           border-color: $colorRed
 
++r($tablet)
+  .m-slick-dots
+    .slick-dots
+      padding-top: 25px
+      padding-bottom: 40px
+
 /* slick arrows
 
 .slick-next, .slick-prev
@@ -257,21 +263,22 @@
       height: 1px
       transform: translateY(-50%)
       +tr
-  &--left
-    span
-      padding-right: 0
-      padding-left: 80px
-      &::after
-        right: auto
-        left: 0
-        margin-left: 0
-        margin-right: 18px
-  &:hover
-    span
-      color: $colorRed
-      text-decoration: underline
-      &::after
-        background: $colorRed
+  +rmin($tablet)
+    &--left
+      span
+        padding-right: 0
+        padding-left: 80px
+        &::after
+          right: auto
+          left: 0
+          margin-left: 0
+          margin-right: 18px
+    &:hover
+      span
+        color: $colorRed
+        text-decoration: underline
+        &::after
+          background: $colorRed
 
 
 /* slide tabs

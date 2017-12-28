@@ -17,7 +17,9 @@
     width: 75%
     background: #F7F7F7
   > .container
-    position: relative
+    position: absolute
+    bottom: 0vh
+    left: 0
     min-height: calc(500px + 8vh + 8px)
     height: calc(100vh - 115px)
     max-height: calc(800px + 115px - 30px)
@@ -28,6 +30,12 @@
     left: 36px
     z-index: 3
     cursor: pointer
+    .vert
+      fill: #212526
+    .oval
+      fill: #212526
+      stroke: #212526
+
     svg .oval
       transform: translate3d(0,0px,0)
       animation: scrollDown 2s ease infinite
@@ -58,8 +66,8 @@
     transform: translate3d(0,0px,0)
 
 .hero-slider
-  position: absolute
-  top: 115px
+  position: relative
+  top: 0
   right: 0
   left: 0
   z-index: 2
@@ -80,13 +88,14 @@
   .hero
     padding-top: 80px
 
-  .hero-slider
-    top: 80px
+  // .hero-slider
+  //   top: 0px
 
 
 /* hero slide
 .hero-slide
   width: 100%
+  height: auto !important
   &__wrapper
     position: relative
     overflow: hidden
@@ -178,21 +187,21 @@
 +r($desktop)
   .hero
     > .container
-      position: relative
-      min-height: 670px
-      height: calc(100vh + 8vh + 20px)
-      max-height: auto
+      bottom: 2vh
+      min-height: calc(100vh - 115px - 30px)
+      height: auto
+      max-height: 1200px
     &--inner
       > .container
-        min-height: 670px
-        height: calc(100vh + 8vh + 20px)
-        max-height: auto
+        min-height: calc(100vh - 115px - 30px)
+        max-height: 1200px
+        height: auto
 
   .hero-slide
     &__left
-      min-height: 670px
-      height: 100vh
-      max-height: auto
+      min-height: calc(100vh - 115px - 8vh - 20px)
+      max-height: 1200px
+      height: auto
       flex-basis: 100%
       padding-right: 30px
     &__right
@@ -220,6 +229,18 @@
 
 +r($tablet)
   .hero
+    .slick-dots
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+    .scrolldown
+      .vert
+        fill: white
+      .oval
+        fill: white
+        stroke: white
+
     &::after
       display: none
 
@@ -227,12 +248,17 @@
     margin-left: -16px
     margin-right: -16px
     &__left
-      padding: 40px 20px 50px 30px
+      padding: 40px 20px 80px 30px
+      min-height: calc(100vh - 115px)
     &__right
       width: calc(100% - 40px)
     &__title
       font-size: 32px
 
++r(600)
+  .hero-slide
+    &__left
+      min-height: calc(100vh - 80px)
 
 
 
