@@ -87,7 +87,7 @@ $(document).ready(function(){
     initYandexMap();
 
     // temp - developer
-    _window.on('resize', debounce(setBreakpoint, 200))
+    // _window.on('resize', debounce(setBreakpoint, 200))
   }
 
   pageReady();
@@ -105,7 +105,7 @@ $(document).ready(function(){
     // Viewport units buggyfill
     window.viewportUnitsBuggyfill.init({
       force: false,
-      refreshDebounceWait: 250,
+      refreshDebounceWait: 150,
       appendToBody: true
     });
   }
@@ -311,8 +311,8 @@ $(document).ready(function(){
       nextArrow: slickPrevArrow,
       infinite: true,
       speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       accessibility: false,
       adaptiveHeight: true,
       responsive: [
@@ -421,9 +421,15 @@ $(document).ready(function(){
 
   // CATEGORY TOGGLER
   _document
-    .on('click', '.sidebar__category-top', function(){
-      $(this).toggleClass('is-opened');
-      $(this).parent().find('.sidebar__category-drop').slideToggle();
+    .on('click', '.sidebar__category-top-icon', function(e){
+      var thisParent = $(this).parent();
+      thisParent.parent().siblings().find('.sidebar__category-top').removeClass('is-opened');
+      thisParent.toggleClass('is-opened');
+      thisParent.parent().siblings().find('.sidebar__category-drop').slideUp()
+      thisParent.parent().find('.sidebar__category-drop').slideToggle();
+
+      e.preventDefault();
+      e.stopPropagation();
     })
     .on('click', '.sidebar__mobile-control', function(){
       $(this).toggleClass('is-opened');

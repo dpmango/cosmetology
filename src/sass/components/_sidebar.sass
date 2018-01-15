@@ -48,12 +48,13 @@
   &__category
     margin-right: 30px
     &-top
+      display: block
       position: relative
       +history
       cursor: pointer
       padding: 15px 0
       border-bottom: 1px solid #CCCCCC
-      &::after
+      &-icon
         display: inline-block
         content: ' '
         position: absolute
@@ -64,12 +65,12 @@
         size: 16px 10px
         +tr
       &:hover
-        &::after
+        .sidebar__category-top-icon
           background-image: svg-load('../icons/menu-drop-red.svg')
 
       &.is-opened
         border-color: #212526
-        &::after
+        .sidebar__category-top-icon
           background-image: svg-load('../icons/menu-drop-red.svg')
           transform: translateY(-50%) rotate(180deg)
 

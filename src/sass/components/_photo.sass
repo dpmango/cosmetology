@@ -8,7 +8,13 @@
     overflow: hidden
     display: flex !important
 
+.photo-slide-row
+  display: flex !important
+  align-items: stretch !important
+  height: auto !important
+
 .photo-slide
+  flex: 0 1 50%
   display: flex !important
   flex-direction: column
   height: auto !important
@@ -30,9 +36,22 @@
     z-index: 2
 
   &__image
+    position: relative
     display: block
     +tr
+    &::after
+      display: none
+      content: ' '
+      position: absolute
+      top: 24px
+      left: -24px
+      right: 24px
+      bottom: -24px
+      background: $grayBg
+      z-index: 1
     img
+      position: relative
+      z-index: 2
       max-width: 100%
     &:hover
       opacity: .7
@@ -47,9 +66,15 @@
       right: calc(24px + 15px)
     .photo-slide__name
       padding-right: 35px
+    .photo-slide__image
+      &::after
+        left: 24px
+        right: -24px
 
 
   &__name
+    position: relative
+    z-index: 2
     display: inline-block
     margin-top: 35px
     text-align: center
@@ -60,6 +85,18 @@
       text-decoration: none
 
 +r($tablet)
+  .photo-slide-row
+    display: flex !important
+    flex-direction: column
+
   .photo-slide
+    flex: 0 0 auto
+    &::after
+      display: none
     &__name
       font-size: 16px
+  .slick-current
+    .photo-slide
+      &__image
+        &::after
+          display: inline-block

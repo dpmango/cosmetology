@@ -21,7 +21,19 @@
       padding-top: 16px
       padding-bottom: 16px
       max-width: 380px
-
+  .ui-checkbox
+    input
+      &:checked
+        + label
+          &::after
+            transform: scale(1)
+    label
+      &:before
+        top: 0
+        transform: none
+      &:after
+        top: 2px
+        transform: scale(0)
 
 +r($desktop)
   .contact-form

@@ -108,8 +108,8 @@
     width: 100%
     display: flex
     flex-direction: column
-    min-height: 500px
-    height: calc(100vh - 115px - 8px - 8vh)
+    height: auto
+    min-height: calc(100vh - 115px - 8px - 8vh)
     max-height: 800px
     padding: 50px calc( ((2/12) * 100%) + 30px) 50px 30px
   &__right
@@ -316,6 +316,8 @@
     padding-bottom: 15px
     margin-bottom: 35px
     +history
+    padding-left: 25px
+    padding-right: 25px
     &::after
       position: absolute
       bottom: 0
@@ -329,17 +331,21 @@
 
 +r($desktop)
   .slider-slide
-    min-height: 670px
-    height: 100vh
+    height: auto
+    min-height: calc(100vh - 80px)
     max-height: auto
     &__title
       font-size: 53px
+      padding-left: 15px
+      padding-right: 15px
 
 
 +r($mobile)
   .slider-slide
     &__title
       font-size: 32px
+      padding-left: 0px
+      padding-right: 0px
 
 .breadcrumbs
   a
