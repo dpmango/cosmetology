@@ -26,9 +26,10 @@
     content: ' '
     position: absolute
     top: 24px
-    left: calc(24px + 15px)
+    left: 39px
     right: 0
     bottom: 0
+    width: calc(100% - 39px)
     background: $grayBg
     z-index: 1
   &__content
@@ -63,7 +64,7 @@
   &--right
     &::after
       left: 0
-      right: calc(24px + 15px)
+      right: 39px
     .photo-slide__name
       padding-right: 35px
     .photo-slide__image
@@ -87,6 +88,7 @@
 +r($tablet)
   .photo-slide-row
     display: flex !important
+    align-items: flex-start !important
     flex-direction: column
 
   .photo-slide

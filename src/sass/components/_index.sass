@@ -435,11 +435,15 @@
 
 +r($tablet)
   .page-nav
+
+    &__title
+      font-size: 16px
+
++r($mobile)
+  .page-nav
     flex-direction: column
     &__prev, &__next
       flex: 0 0 auto
-    &__title
-      font-size: 16px
     &__prev
       margin-bottom: 80px
       &::after
