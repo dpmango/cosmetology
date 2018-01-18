@@ -106,7 +106,7 @@ $(document).ready(function(){
     // Viewport units buggyfill
     window.viewportUnitsBuggyfill.init({
       force: false,
-      refreshDebounceWait: 150,
+      // refreshDebounceWait: 50,
       appendToBody: true
     });
   }
