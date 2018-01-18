@@ -77,6 +77,7 @@ $(document).ready(function(){
     initPopups();
 
     updateHeaderActiveClass();
+    autoplayVideo();
     initMasks();
     initFitText();
     // runScrollMonitor();
@@ -107,6 +108,12 @@ $(document).ready(function(){
       force: false,
       refreshDebounceWait: 150,
       appendToBody: true
+    });
+  }
+
+  function autoplayVideo(){
+    $('[js-bg-autoplay]').each(function(i,el){
+      el.play()
     });
   }
 
