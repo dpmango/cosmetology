@@ -147,6 +147,8 @@
     // min-height: 100%
     // width: auto
     // height: auto
+    &--mobile
+      display: none !important
 
   &__content
     flex: 1 1 auto
@@ -335,6 +337,12 @@
       width: 130px
       height: 1px
       background: white
+
+.is-mobile
+  .hero-slide-bg
+    display: none !important
+    &--mobile
+      display: none !important
 
 +r($desktop)
   .slider-slide
