@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- MADE WITH LOVE BY <> KHMELEVSKOY & ASSOCIATES </> www.khmelevskoy.co-->
+    <meta charset="utf-8">
+    <title>About</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- remove for production-->
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" media="all" href="css/app.css"><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body class="inner">
+    <div id="barba-wrapper">
+      <div class="page">
+        <!-- HEADER :: START-->
+        <header class="header">
+          <div class="container container--full">
+            <div class="header__wrapper"><a class="header__logo" href="homepage.html">
+                <!-- logo--></a>
+              <ul class="header__menu" js-header-menu>
+                <li><a href="about.html">о нас</a>
+                  <ul class="header__menu-sub">
+                    <li><a href="#">Косметология</a></li>
+                    <li><a href="#">Эстетическая гинекология</a></li>
+                    <li><a href="#">Пластическая хирургия</a></li>
+                    <li><a href="#">Реабилитация            </a></li>
+                  </ul>
+                </li>
+                <li><a href="services-list.html">услуги</a>
+                  <ul class="header__menu-sub">
+                    <li><a href="#">услуга 1</a></li>
+                    <li><a href="#">услуга 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="price-list.html">цены</a>
+                  <ul class="header__menu-sub">
+                    <li><a href="#">услуга 1</a></li>
+                    <li><a href="#">услуга 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="video.html">видео</a>
+                  <ul class="header__menu-sub">
+                    <li><a href="#">услуга 1</a></li>
+                    <li><a href="#">услуга 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">результаты лечения</a>
+                  <ul class="header__menu-sub">
+                    <li><a href="#">услуга 1</a></li>
+                    <li><a href="#">услуга 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="i-want-list.html">я хочу!</a>
+                  <ul class="header__menu-sub">
+                    <li><a href="#">услуга 1</a></li>
+                    <li><a href="#">услуга 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">контакты</a></li>
+              </ul>
+              <div class="header__cta"><a class="header__callback" href="#modalCallback" js-popup>
+                  <svg class="ico ico-callback">
+                    <use xlink:href="img/sprite.svg#ico-callback"></use>
+                  </svg><span>заказать  звонок</span></a><a class="header__phone" href="tel:88005551232323"><span>8 (800)</span><span>555–123–2323</span></a></div><a class="header__cta-mobile" href="tel:88005551232323">
+                <svg class="ico ico-phone">
+                  <use xlink:href="img/sprite.svg#ico-phone"></use>
+                </svg></a>
+              <div class="header__hamburger">
+                <div class="hamburger hamburger--spin" js-hamburger>
+                  <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- HEADER :: END-->
+        <!-- MOBILE MENU :: START-->
+        <div class="mobile-navi">
+          <ul class="mobile-navi__menu" js-mobile-nav>
+            <li><a href="about.html">о нас</a>
+              <ul>
+                <li><a href="#">Косметология</a></li>
+                <li><a href="#">Эстетическая гинекология</a></li>
+                <li><a href="#">Пластическая хирургия</a></li>
+                <li><a href="#">Реабилитация            </a></li>
+              </ul>
+            </li>
+            <li><a href="services-list.html">услуги</a>
+              <ul>
+                <li><a href="#">услуга 1</a></li>
+                <li><a href="#">услуга 2</a></li>
+              </ul>
+            </li>
+            <li><a href="price-list.html">цены</a>
+              <ul>
+                <li><a href="#">услуга 1</a></li>
+                <li><a href="#">услуга 2</a></li>
+              </ul>
+            </li>
+            <li><a href="video.html">видео</a>
+              <ul>
+                <li><a href="#">услуга 1</a></li>
+                <li><a href="#">услуга 2</a></li>
+              </ul>
+            </li>
+            <li><a href="#">результаты лечения</a>
+              <ul>
+                <li><a href="#">услуга 1</a></li>
+                <li><a href="#">услуга 2</a></li>
+              </ul>
+            </li>
+            <li><a href="i-want-list.html">я хочу!</a>
+              <ul>
+                <li><a href="#">услуга 1</a></li>
+                <li><a href="#">услуга 2</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">контакты</a></li>
+          </ul>
+        </div>
+        <!-- HEADER MODALS-->
+        <div class="popup-dialog popup-dialog--narrow mfp-hide" id="modalCallback">
+          <div class="container">
+            <div class="text-title">заказать звонок</div>
+            <form class="callback-form-modal" action="">
+              <div class="ui-group">
+                <input type="text" name="name" placeholder="Имя">
+              </div>
+              <div class="ui-group">
+                <input type="tel" name="name" placeholder="Телефон">
+              </div>
+              <div class="ui-checkbox">
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree"> <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.</span></label>
+              </div>
+              <div class="ui-group">
+                <div class="btn btn-red btn--block"><span>Отправить</span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="page__content">
+          <!-- HERO SLIDER :: START-->
+          <div class="hero hero--inner">
+            <div class="container">
+              <div class="scrolldown wow" js-scrolldown data-animation-delay=".3s"><?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="61px" viewBox="0 0 10 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <polygon class="vert" transform="translate(5.000064, 30.500054) rotate(90.000000) translate(-5.000064, -30.500054) " points="-25 30 35.000128 30 35.000128 31.000108 -25 31.000108"></polygon>
+      <circle class="oval" stroke="#212526" stroke-width="1" cx="5" cy="31" r="4"></circle>
+    </g>
+</svg>
+
+              </div>
+            </div>
+            <div class="slider wow m-slick-dots m-slick-arrows m-abs-controls" js-slider data-slick-dots data-slick-arrows>
+              <!--slide-->
+              <div class="slider-slide"><img class="slider-slide-bg" src="img/sliderNews.jpg" srcset="img/sliderNews@2x.jpg 2x">
+                <div class="slider-slide__content">
+                  <div class="slider-slide__title">новости</div>
+                  <div class="breadcrumbs"><a href="#">Главная</a><span>О нас</span></div>
+                </div>
+              </div>
+              <!--slide-->
+              <div class="slider-slide"><img class="slider-slide-bg" src="img/sliderNews.jpg" srcset="img/sliderNews@2x.jpg 2x">
+                <div class="slider-slide__content">
+                  <div class="slider-slide__title">новости</div>
+                  <div class="breadcrumbs"><a href="#">Главная</a><span>О нас  </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TEXT :: START-->
+          <div class="section text">
+            <div class="container">
+              <!-- title block-->
+              <div class="title title--desc-only wow">
+                <div class="news-date">1 июля 2017</div>
+                <div class="small-title">название новости</div>
+                <div class="title__description">As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</div>
+              </div>
+              <!-- text wrapper-->
+              <div class="text__wrapper wow">
+                <p><span class="first-letter">W</span> cience cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>
+                <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man. Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+                <p>NASA is not about the ‘Adventure of Human Space Exploration’…We won’t be doing it just to get out there in space – we’ll be doing it because the things we learn out there will be making life better for a lot of people who won’t be able to go. The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round. I believe I never knew what the word round meant until I saw Earth from space.</p>
+              </div>
+              <!-- page nav-->
+              <div class="page-nav wow"><a class="page-nav__prev" href="#">
+                  <svg class="ico ico-back-arrow">
+                    <use xlink:href="img/sprite.svg#ico-back-arrow"></use>
+                  </svg>
+                  <div class="page-nav__content">
+                    <div class="page-nav__name">предыдущая новость</div>
+                    <div class="page-nav__date">1 июля 2017</div>
+                    <div class="page-nav__title">название элемента</div>
+                  </div></a><a class="page-nav__next" href="#">
+                  <div class="page-nav__content">
+                    <div class="page-nav__name">предыдущая новость</div>
+                    <div class="page-nav__date">1 июля 2017</div>
+                    <div class="page-nav__title">название элемента</div>
+                  </div>
+                  <svg class="ico ico-back-arrow">
+                    <use xlink:href="img/sprite.svg#ico-back-arrow"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <!-- SIMILAR NEWS :: START-->
+          <div class="section">
+            <div class="container">
+              <!-- title block-->
+              <div class="small-title wow">похожие новости</div>
+              <div class="news-slider wow m-slick-dots m-slick-arrows" js-slider-col-3>
+                <!-- slide-->
+                <div class="news-slide"><a class="news-slide__image" href="#"><img alt="image name" src="img/newsSlide1.jpg" srcset="img/newsSlide1@2x.jpg 2x"></a>
+                  <div class="news-slide__content">
+                    <div class="news-slide__date">17.09.2017</div><a class="news-slide__name" href="#">Мужчины проходят через накачку губ, чтобы походить на звезд</a>
+                    <div class="news-slide__text">В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.</div>
+                  </div>
+                </div>
+                <!-- slide-->
+                <div class="news-slide"><a class="news-slide__image" href="#"><img alt="image name" src="img/newsSlide2.jpg" srcset="img/newsSlide2@2x.jpg 2x"></a>
+                  <div class="news-slide__content">
+                    <div class="news-slide__date">17.09.2017</div><a class="news-slide__name" href="#">Мужчины проходят через накачку губ, чтобы походить на звезд</a>
+                    <div class="news-slide__text">В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.</div>
+                  </div>
+                </div>
+                <!-- slide-->
+                <div class="news-slide"><a class="news-slide__image" href="#"><img alt="image name" src="img/newsSlide3.jpg" srcset="img/newsSlide3@2x.jpg 2x"></a>
+                  <div class="news-slide__content">
+                    <div class="news-slide__date">17.09.2017</div><a class="news-slide__name" href="#">Мужчины проходят через накачку губ, чтобы походить на звезд</a>
+                    <div class="news-slide__text">В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.</div>
+                  </div>
+                </div>
+                <!-- slide-->
+                <div class="news-slide"><a class="news-slide__image" href="#"><img alt="image name" src="img/newsSlide2.jpg" srcset="img/newsSlide2@2x.jpg 2x"></a>
+                  <div class="news-slide__content">
+                    <div class="news-slide__date">17.09.2017</div><a class="news-slide__name" href="#">Мужчины проходят через накачку губ, чтобы походить на звезд</a>
+                    <div class="news-slide__text">В последний месяц необычно увеличилось количество мужчин, которые хотят сделать хирургическую коррекцию губ — выдающуюся нижнюю губу и естественную ухмылку.  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER :: START-->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__wrapper">
+              <div class="footer__col">
+                <div class="footer__copy"> <span>SVS Косметология</span><span>© 2017  Все права защищены.</span></div>
+              </div>
+              <div class="footer__col"><span>Москва, ул. Арбат, 1</span><span>тел.: <a href="tel:+74955265380">+7 495 526 5380</a></span><span>e-mail: <a href="mailto:info@site.ru">info@site.ru</a></span></div>
+              <div class="footer__col">
+                <div class="footer__socials"><a class="social social--small social--facebook" href="#">
+                    <svg class="ico ico-social-facebook">
+                      <use xlink:href="img/sprite.svg#ico-social-facebook"></use>
+                    </svg></a><a class="social social--small social--youtube" href="#">
+                    <svg class="ico ico-social-youtube">
+                      <use xlink:href="img/sprite.svg#ico-social-youtube"></use>
+                    </svg></a><a class="social social--small social--instagram" href="#">
+                    <svg class="ico ico-social-instagram">
+                      <use xlink:href="img/sprite.svg#ico-social-instagram"></use>
+                    </svg></a><a class="social social--small social--vk" href="#">
+                    <svg class="ico ico-social-vk">
+                      <use xlink:href="img/sprite.svg#ico-social-vk"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER :: END-->
+      </div>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      <script src="js/vendor.js"></script>
+      <script src="js/app.js"></script>
+    </div>
+  </body>
+</html>

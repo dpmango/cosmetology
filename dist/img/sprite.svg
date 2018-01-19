@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <pattern id="b" x="0%" width="100%" height="100%">
+            <use xlink:href="#a" transform="scale(.66667)"/>
+        </pattern>
+        <image id="a" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEDWlDQ1BJQ0MgUHJvZmlsZQAAOI2NVV1oHFUUPrtzZyMkzlNsNIV0qD8NJQ2TVjShtLp/3d02bpZJNtoi6GT27s6Yyc44M7v9oU9FUHwx6psUxL+3gCAo9Q/bPrQvlQol2tQgKD60+INQ6Ium65k7M5lpurHeZe58853vnnvuuWfvBei5qliWkRQBFpquLRcy4nOHj4g9K5CEh6AXBqFXUR0rXalMAjZPC3e1W99Dwntf2dXd/p+tt0YdFSBxH2Kz5qgLiI8B8KdVy3YBevqRHz/qWh72Yui3MUDEL3q44WPXw3M+fo1pZuQs4tOIBVVTaoiXEI/MxfhGDPsxsNZfoE1q66ro5aJim3XdoLFw72H+n23BaIXzbcOnz5mfPoTvYVz7KzUl5+FRxEuqkp9G/Ajia219thzg25abkRE/BpDc3pqvphHvRFys2weqvp+krbWKIX7nhDbzLOItiM8358pTwdirqpPFnMF2xLc1WvLyOwTAibpbmvHHcvttU57y5+XqNZrLe3lE/Pq8eUj2fXKfOe3pfOjzhJYtB/yll5SDFcSDiH+hRkH25+L+sdxKEAMZahrlSX8ukqMOWy/jXW2m6M9LDBc31B9LFuv6gVKg/0Szi3KAr1kGq1GMjU/aLbnq6/lRxc4XfJ98hTargX++DbMJBSiYMIe9Ck1YAxFkKEAG3xbYaKmDDgYyFK0UGYpfoWYXG+fAPPI6tJnNwb7ClP7IyF+D+bjOtCpkhz6CFrIa/I6sFtNl8auFXGMTP34sNwI/JhkgEtmDz14ySfaRcTIBInmKPE32kxyyE2Tv+thKbEVePDfW/byMM1Kmm0XdObS7oGD/MypMXFPXrCwOtoYjyyn7BV29/MZfsVzpLDdRtuIZnbpXzvlf+ev8MvYr/Gqk4H/kV/G3csdazLuyTMPsbFhzd1UabQbjFvDRmcWJxR3zcfHkVw9GfpbJmeev9F08WW8uDkaslwX6avlWGU6NRKz0g/SHtCy9J30o/ca9zX3Kfc19zn3BXQKRO8ud477hLnAfc1/G9mrzGlrfexZ5GLdn6ZZrrEohI2wVHhZywjbhUWEy8icMCGNCUdiBlq3r+xafL549HQ5jH+an+1y+LlYBifuxAvRN/lVVVOlwlCkdVm9NOL5BE4wkQ2SMlDZU97hX86EilU/lUmkQUztTE6mx1EEPh7OmdqBtAvv8HdWpbrJS6tJj3n0CWdM6busNzRV3S9KTYhqvNiqWmuroiKgYhshMjmhTh9ptWhsF7970j/SbMrsPE1suR5z7DMC+P/Hs+y7ijrQAlhyAgccjbhjPygfeBTjzhNqy28EdkUh8C+DU9+z2v/oyeH791OncxHOs5y2AtTc7nb/f73TWPkD/qwBnjX8BoJ98VVBg/m8AAACzSURBVGgF7ZhBCsMwDATjvsb/f41/09LjHsWQbQOTm8CS4hkLjNfe+30NvnPOGiy/7q7/mvzMP651A7+2ogENQAIeIQgQp2sAI4QFHm9gdK/5wrr7bjOt/3gDbgDOIE7XAEYIC2gAAsTpGsAIYQENQIA4fU3vHr4LYeZZwBlIHv1IA33m2VEDyaMfaaDPPDtqIHn0I9+F+syzozOQPPqRBvrMs6MGkkc/0kCfeXbUQPLoRx+YOxtLtn0wiAAAAABJRU5ErkJggg=="/>
+    
+        <path id="a" d="M70.54.325H0v40.247h70.54z"/>
+    </defs><symbol id="ico-back-arrow" viewBox="0 0 18 29">
+    <title>
+        back
+    </title>
+    <path d="M18 3.383L14.595 0 0 14.5 14.595 29 18 25.617 6.81 14.5z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-benefits" viewBox="0 0 32 32">
+    <title>
+        benefits
+    </title>
+    
+    <path d="M1 84h32v32H1z" transform="translate(-1 -84)" fill-rule="evenodd"/>
+</symbol><symbol id="ico-callback" viewBox="0 0 10 10">
+    <title>
+        callback
+    </title>
+    <path d="M7.778 5L10 2.5 7.778 0v1.5H6v2h1.778V5zM8.5 7.25c-.6 0-1.2-.1-1.8-.3-.15-.05-.35 0-.5.1l-1.1 1.1c-1.4-.7-2.55-1.9-3.3-3.3l1.1-1.1c.15-.15.2-.35.1-.5-.15-.55-.25-1.15-.25-1.75 0-.3-.2-.5-.5-.5H.5c-.3 0-.5.2-.5.5C0 6.2 3.8 10 8.5 10c.3 0 .5-.2.5-.5V7.75c0-.3-.2-.5-.5-.5z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-checked" viewBox="0 0 14 10">
+    <title>
+        checked
+    </title>
+    <path d="M5 10L0 5.192l1.4-1.346L5 7.308 12.6 0 14 1.346z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-direction" viewBox="0 0 9 16">
+    <title>
+        direction
+    </title>
+    <path d="M5.5 3C6.333 3 7 2.333 7 1.5S6.333 0 5.5 0 4 .667 4 1.5 4.667 3 5.5 3zm.108 4.333H9v-1.3H6.508L5.123 3.65C4.915 3.289 4.5 3 4.085 3c-.139 0-.208 0-.347.072L0 4.3v3.756h1.246V5.383L2.7 4.878 0 16h1.246l2.008-5.85 1.592 2.239V16h1.246v-4.622l-1.73-3.25.484-2.095.762 1.3z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-hide" viewBox="0 0 10 16">
+    <title>
+        hide
+    </title>
+    <path d="M0 14.6L1.4 16l3.2-3.2L7.8 16l1.4-1.4L4.6 10 0 14.6zM9.2 1.4L7.8 0 4.6 3.2 1.4 0 0 1.4 4.6 6l4.6-4.6z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-image" viewBox="0 0 18 18">
+    <title>
+        image
+    </title>
+    <path d="M18 16V2c0-1.1-.9-2-2-2H2C.9 0 0 .9 0 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM5.5 10.5l2.5 3L11.5 9l4.5 6H2l3.5-4.5z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-menu-drop-red" viewBox="0 0 16 10">
+    <title>
+        menu-drop-red@2x
+    </title>
+    <path d="M1.867 0L8 6.133 14.133 0 16 1.867l-8 8-8-8z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-menu-drop" viewBox="0 0 16 10">
+    <title>
+        menu-drop
+    </title>
+    <path d="M14.133 0L8 6.133 1.867 0 0 1.867l8 8 8-8z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-next-arrow" viewBox="0 0 18 29">
+    <title>
+        next-arrow
+    </title>
+    <path d="M0 3.383L3.405 0 18 14.5 3.405 29 0 25.617 11.19 14.5z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-phone" viewBox="0 0 29 29">
+    <title>
+        phone
+    </title>
+    <path d="M27.389 20.139c-1.933 0-3.867-.322-5.8-.967-.483-.16-1.128 0-1.611.322l-3.545 3.545c-4.51-2.256-8.216-6.122-10.633-10.633L9.344 8.86c.484-.483.645-1.128.323-1.611-.484-1.772-.806-3.706-.806-5.639C8.861.644 8.217 0 7.25 0H1.611C.644 0 0 .644 0 1.611 0 16.756 12.244 29 27.389 29c.967 0 1.611-.644 1.611-1.611V21.75c0-.967-.644-1.611-1.611-1.611zM25.778 14.5H29A14.44 14.44 0 0 0 14.5 0v3.222c6.283 0 11.278 4.995 11.278 11.278zm-6.445 0h3.223c0-4.511-3.545-8.056-8.056-8.056v3.223c2.739 0 4.833 2.094 4.833 4.833z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-scrollDown" viewBox="0 0 10 61">
+    <g fill-rule="evenodd">
+        <path class="vert" d="M5.5.5v60h-1V.5z"/>
+        <circle class="oval" cx="5" cy="31" r="4"/>
+    </g>
+</symbol><symbol id="ico-social-facebook" viewBox="0 0 70 70">
+    <title>
+        social-facebook
+    </title>
+    <path d="M66.137 0H3.863A3.863 3.863 0 0 0 0 3.863v62.274A3.863 3.863 0 0 0 3.863 70h33.526V42.893h-9.122V32.328h9.122v-7.791c0-9.041 5.522-13.965 13.588-13.965 3.863 0 7.183.288 8.151.417v9.448l-5.593.003c-4.387 0-5.236 2.084-5.236 5.143v6.745H58.76l-1.361 10.565h-9.1V70h17.838A3.862 3.862 0 0 0 70 66.137V3.863A3.862 3.862 0 0 0 66.137 0" fill-rule="evenodd"/>
+</symbol><symbol id="ico-social-instagram" viewBox="0 0 72 72">
+    <title>
+        social-instagram
+    </title>
+    <path d="M63.57 71.84H8.429C3.863 71.84.16 68.136.16 63.566V8.429A8.27 8.27 0 0 1 8.429.16H63.57a8.268 8.268 0 0 1 8.27 8.269v55.137a8.27 8.27 0 0 1-8.27 8.274zM36 22.215c-7.614 0-13.785 6.17-13.785 13.784 0 7.612 6.171 13.786 13.785 13.786 7.613 0 13.785-6.174 13.785-13.786 0-7.614-6.172-13.784-13.785-13.784zm27.57-11.029a2.758 2.758 0 0 0-2.759-2.757h-8.269a2.758 2.758 0 0 0-2.757 2.757v8.272a2.758 2.758 0 0 0 2.757 2.757h8.269a2.758 2.758 0 0 0 2.759-2.757v-8.272zm0 19.297h-6.239a22.1 22.1 0 0 1 .724 5.516c0 12.183-9.875 22.056-22.055 22.056s-22.055-9.873-22.055-22.056c0-1.907.27-3.751.725-5.516H8.429v30.329a2.757 2.757 0 0 0 2.76 2.754h49.622a2.756 2.756 0 0 0 2.759-2.754V30.483z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-social-vk" viewBox="0 0 71 41">
+    <title>
+        social-vk
+    </title>
+    
+    <g fill-rule="evenodd">
+        <mask id="b">
+            <use xlink:href="#a"/>
+        </mask>
+        <path d="M70.168 36.672a4.842 4.842 0 0 0-.24-.46c-1.224-2.204-3.564-4.909-7.015-8.116l-.072-.075-.038-.035-.037-.037h-.036c-1.567-1.495-2.56-2.499-2.976-3.012-.76-.979-.93-1.972-.515-2.975.295-.76 1.396-2.362 3.306-4.812 1.004-1.297 1.8-2.338 2.386-3.121 4.238-5.633 6.074-9.232 5.51-10.8l-.218-.365c-.148-.22-.526-.422-1.138-.605-.612-.185-1.396-.216-2.35-.092l-10.58.072c-.17-.059-.415-.055-.733.02l-.48.11-.182.093-.145.11c-.124.072-.258.2-.405.385a2.526 2.526 0 0 0-.366.643c-1.153 2.962-2.46 5.716-3.931 8.263a79.18 79.18 0 0 1-2.498 3.949c-.76 1.113-1.396 1.935-1.909 2.46-.515.527-.979.95-1.395 1.266-.418.32-.735.454-.955.405-.22-.05-.43-.1-.625-.148a2.412 2.412 0 0 1-.826-.9c-.209-.378-.35-.856-.422-1.432a16.351 16.351 0 0 1-.13-1.486 32.61 32.61 0 0 1 .02-1.763c.023-.76.037-1.275.037-1.543 0-.932.017-1.942.053-3.031.037-1.09.068-1.953.092-2.589.024-.636.037-1.31.037-2.02s-.044-1.266-.13-1.671a5.66 5.66 0 0 0-.385-1.176 1.97 1.97 0 0 0-.752-.88c-.33-.21-.74-.374-1.229-.498C37.598.513 35.945.355 33.937.33c-4.554-.049-7.48.246-8.778.883-.515.268-.98.636-1.395 1.1-.44.54-.502.834-.185.882 1.47.22 2.509.747 3.123 1.579l.22.442c.172.317.344.88.513 1.688.172.808.282 1.702.33 2.681.123 1.788.123 3.318 0 4.592a52.973 52.973 0 0 1-.348 2.974c-.11.711-.275 1.285-.495 1.728-.22.44-.367.708-.442.808a.63.63 0 0 1-.183.182c-.319.124-.65.185-.993.185-.34 0-.757-.171-1.248-.515-.489-.343-.997-.814-1.523-1.416-.526-.598-1.12-1.436-1.783-2.515-.66-1.077-1.344-2.349-2.056-3.82l-.587-1.064A86.737 86.737 0 0 1 16.6 7.729a57.037 57.037 0 0 1-1.688-3.801c-.196-.513-.491-.905-.883-1.176l-.183-.11c-.123-.097-.319-.2-.587-.313-.27-.11-.55-.189-.846-.237l-10.063.072c-1.028 0-1.726.234-2.093.698l-.148.22c-.073.124-.11.32-.11.588 0 .271.073.6.22.993a121.119 121.119 0 0 0 4.794 9.988c1.726 3.21 3.225 5.792 4.497 7.75a91.32 91.32 0 0 0 3.894 5.545c1.323 1.74 2.199 2.853 2.626 3.344.43.491.766.856 1.01 1.1l.918.883c.588.588 1.45 1.292 2.591 2.11a44.12 44.12 0 0 0 3.782 2.427c1.384.794 2.993 1.443 4.831 1.945 1.836.503 3.623.705 5.362.606h4.224c.856-.073 1.506-.343 1.946-.808l.145-.182c.099-.148.191-.375.275-.681.086-.305.13-.642.13-1.01-.024-1.052.055-2 .238-2.846.182-.843.391-1.48.625-1.909.233-.429.495-.79.79-1.083.293-.294.502-.47.625-.532.121-.062.218-.104.293-.13.588-.196 1.279-.004 2.075.57a12.297 12.297 0 0 1 2.241 2.13 65.931 65.931 0 0 0 2.514 2.847c.982 1.052 1.838 1.836 2.57 2.35l.736.44c.49.296 1.127.564 1.91.809.784.246 1.469.308 2.057.185l9.403-.148c.929 0 1.653-.154 2.166-.46.515-.306.819-.643.918-1.008.099-.368.103-.784.02-1.25-.089-.465-.174-.79-.258-.974z" mask="url(#b)"/>
+    </g>
+</symbol><symbol id="ico-social-youtube" viewBox="0 0 72 50">
+    <title>
+        social-youtube
+    </title>
+    <path d="M28.597 33.793l19.368-10.035-19.368-10.106v20.141zm43.243 5.543c0 5.631-4.608 10.24-10.24 10.24H10.4c-5.632 0-10.24-4.609-10.24-10.24V10.664C.16 5.031 4.768.424 10.4.424h51.2c5.632 0 10.24 4.607 10.24 10.24v28.672z" fill-rule="evenodd"/>
+</symbol><symbol id="ico-up" viewBox="0 0 24 15">
+    <title>
+        up
+    </title>
+    <path d="M21.2 15L12 5.676 2.8 15 0 12.162 12 0l12 12.162z" fill-rule="evenodd"/>
+</symbol></svg>
